@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,50 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
+    <header class="page-header">
+      <div class="container">
+        <button class="page-header__toggler" type="button" aria-controls="nav">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <a class="page-header__logo" href="#" style="background-color: tomato; display: inline-block;">
+          <img src="/__spritemap#sprite-header-logo" width="142" height="42" alt="Логотип Lifetour.">
+        </a>
+
+        <nav class="page-header__nav header-nav" id="nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#tours">Туры</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#tuition">Обучение</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#about">О нас</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#photos">Фотографии</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="page-header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+    </header>
+
+
+    <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
+    </svg> -->
+
+    <!-- примеры требуемых атрибутов data-test="*"
     <div data-test="header">header</div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
@@ -24,7 +61,9 @@
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">footer</div>  -->
+
+
     <script type="module" src="js/main.js"></script>
   </body>
 
