@@ -32,7 +32,7 @@
               <a class="header-nav__link" href="#reviews">Отзывы</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#photos">Фотографии</a>
+              <a class="header-nav__link" href="#gallery">Фотографии</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="#contacts">Контакты</a>
@@ -343,7 +343,7 @@
         </div>
       </section>
 
-      <section class="section reviews">
+      <section class="section reviews" id="reviews">
         <div class="container">
           <div class="reviews__slider swiper">
             <header class="section__header">
@@ -439,7 +439,7 @@
         </div>
       </section>
 
-      <section class="section gallery">
+      <section class="section gallery" id="gallery">
         <div class="container">
           <div class="gallery__slider swiper">
             <header class="section__header">
@@ -479,6 +479,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="callback">
+        <div class="callback__container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+
+          <form action="https://echo.htmlacademy.ru">
+            <label for="phone" class="visually-hidden">Телефон</label>
+            <input class="field" type="text" name="phone" id="phone" placeholder="Телефон">
+
+            <label for="email" class="visually-hidden">E-mail</label>
+            <input class="field" type="email" name="email" id="email" placeholder="Email">
+
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </div>
       </section>
     </main>
