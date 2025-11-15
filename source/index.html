@@ -14,33 +14,35 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="page-header__logo" href="#" style="background-color: tomato; display: inline-block;">
-          <img src="/__spritemap#sprite-header-logo" width="142" height="42" alt="Логотип Lifetour.">
+          <svg width="142" height="42" aria-label="Логотип Lifetour.">
+            <use href="/__spritemap#sprite-header-logo"></use>
+          </svg>
         </a>
 
-        <nav class="page-header__nav header-nav" id="nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#tours">Туры</a>
+        <nav class="page-header__nav nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#tours">Туры</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#training">Обучение</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#training">Обучение</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#about">О нас</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">О нас</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#reviews">Отзывы</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#reviews">Отзывы</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#gallery">Фотографии</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#gallery">Фотографии</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#contacts">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <a class="page-header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+        <a class="page-header__phone phone" href="tel:+78000000000">8 800 000-00-00</a>
       </div>
     </header>
 
@@ -526,6 +528,61 @@
         </div>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__container">
+          <a class="page-footer__logo" href="#" style="display: inline-block;">
+            <svg width="142" height="42" aria-label="Логотип Lifetour.">
+              <use href="/__spritemap#sprite-footer-logo"></use>
+            </svg>
+          </a>
+          <nav class="page-footer__nav nav" id="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#tours">Туры</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#training">Обучение</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="page-footer__phone phone" href="tel:+78000000000">8 800 000-00-00</a>
+        </div>
+
+        <ul class="page-footer__socials">
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--ok" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--reddit" href="#">
+              <span class="visually-hidden">Reddit</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="policy" href="#">Политика конфиденциальности</a>
+      </div>
+    </footer>
 
 
     <!-- пример использования спрайта
