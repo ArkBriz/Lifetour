@@ -1,0 +1,12 @@
+.page-header {
+  padding-block: 15px;
+  background-color: $blue;
+
+  @include media("tablet") {
+    padding-block: 20px;
+  }
+
+  @include media("desktop") {
+    padding-block: 32px;
+  }
+}
