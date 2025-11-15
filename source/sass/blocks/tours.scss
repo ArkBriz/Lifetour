@@ -1,0 +1,35 @@
+.tours.section {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @include media("tablet") {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @include media("desktop") {
+    padding-block: 100px;
+  }
+}
+
+.tours__show-all {
+  display: block;
+  width: 212px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 10px 28px 10px 10px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $black;
+
+  @include media("tablet") {
+    width: 230px;
+    font-size: 16px;
+  }
+
+  @include media("desktop") {
+    margin-top: 53px;
+  }
+}

@@ -1,0 +1,30 @@
+.section__title {
+  margin: 0;
+  margin-bottom: 42px;
+
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+
+  @include media("tablet") {
+    margin-bottom: 35px;
+    font-size: 25px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 53px;
+    font-size: 55px;
+  }
+}
+
+.section__navigation {
+  display: flex;
+}
+
+.section__navigation .button {
+  display: none;
+
+  @include media("tablet") {
+    display: block;
+  }
+}
