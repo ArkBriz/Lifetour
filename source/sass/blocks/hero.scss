@@ -1,0 +1,79 @@
+.hero__slider {
+  background-color: #597eab;
+  color: $white;
+  text-align: center;
+
+  @include media("desktop") {
+    text-align: left;
+  }
+}
+
+.hero__slide {
+  padding-top: 144px;
+  padding-bottom: 160px;
+
+  @include media("tablet") {
+    padding-top: 342px;
+    padding-bottom: 402px;
+  }
+
+  @include media("desktop") {
+    padding-bottom: 80px;
+  }
+}
+
+.hero__text-content {
+  margin-bottom: 60px;
+
+  @include media("tablet") {
+    margin-bottom: 35px;
+  }
+}
+
+.hero__text-content h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 800;
+
+  @include media("tablet") {
+    font-size: 56px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 25px;
+    font-size: 77px;
+  }
+}
+
+.hero__text-content p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 20px;
+
+  @include media("tablet") {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @include media("desktop") {
+    margin: 0;
+  }
+}
+
+.hero__container {
+  display: none;
+
+  @include media("desktop") {
+    display: flex;
+    margin-top: 134px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
