@@ -1,0 +1,90 @@
+.training {
+  padding: 20px 0;
+
+  @include media("tablet") {
+    padding: 40px 0;
+  }
+}
+
+.training__slider {
+  margin-bottom: 25px;
+
+  @include media("desktop") {
+    margin-bottom: 56px;
+  }
+}
+
+.training p {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  & br {
+    display: none;
+  }
+
+  @include media("tablet") {
+    font-size: 16px;
+    line-height: 24px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  @include media("desktop") {
+    width: 820px;
+    margin-bottom: 56px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.training__process-title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+
+  @include media("tablet") {
+    margin-bottom: 104px;
+    font-size: 18px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 23px;
+    font-size: 21px;
+  }
+}
+
+.training__process-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 29px;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  list-style-type: none;
+
+  @include media("tablet") {
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include media("desktop") {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.training__process-item {
+  padding-left: 34px;
+}
