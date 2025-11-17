@@ -26,6 +26,10 @@
     margin-bottom: 32px;
   }
 
+  .advantages & {
+    margin-bottom: 37px;
+  }
+
   .training__slider & {
     margin-bottom: 25px;
   }
@@ -45,7 +49,7 @@
 
   @include media("desktop") {
     margin-bottom: 53px;
-    font-size: 55px;
+    font-size: 35px;
 
     .training & {
       margin-bottom: 38px;
@@ -58,13 +62,19 @@
 }
 
 .section__navigation {
-  display: flex;
-}
-
-.section__navigation .button {
   display: none;
 
   @include media("tablet") {
-    display: block;
+    display: flex;
+  }
+
+  .advantages & {
+    @include media("tablet") {
+      display: none;
+    }
+
+    @include media("desktop") {
+      display: flex;
+    }
   }
 }

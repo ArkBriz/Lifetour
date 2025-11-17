@@ -1,0 +1,35 @@
+.advantages {
+  text-align: center;
+}
+
+.advantages__slide {
+  width: 290px;
+  padding: 82px 10px 20px;
+
+  @include media("tablet") {
+    width: 324px;
+    padding: 103px 20px 30px;
+  }
+
+  @include media("desktop") {
+    width: 380px;
+    padding: 124px 20px 40px;
+  }
+}
+
+.advantages__slide h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.advantages__slide p {
+  margin: 0;
+
+  @include media("desktop") {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
