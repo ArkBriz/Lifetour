@@ -7,6 +7,10 @@
 
   @include media("desktop") {
     padding-block: 100px;
+
+    &.contacts{
+      padding-bottom: 95px;
+    }
   }
 }
 
@@ -52,6 +56,10 @@
     margin-bottom: 27px;
   }
 
+  .contacts & {
+    margin-bottom: 29px;
+  }
+
   @include media("tablet") {
     margin-bottom: 35px;
     font-size: 25px;
@@ -67,6 +75,10 @@
 
     .advantages & {
       margin-bottom: 60px;
+    }
+
+    .contacts & {
+      margin-bottom: 20px;
     }
   }
 
@@ -89,6 +101,10 @@
 
     .gallery & {
       margin-bottom: 27px;
+    }
+
+    .contacts & {
+      margin-bottom: 26px;
     }
   }
 }

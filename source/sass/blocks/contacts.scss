@@ -1,0 +1,71 @@
+.contacts__container {
+  margin-bottom: 30px;
+
+  @include media("tablet") {
+    margin-bottom: 40px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 0;
+  }
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @include media("tablet") {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 50px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts__item {
+  padding-left: 34px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+
+  @include media("tablet") {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+}
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+
+  @include media("tablet") {
+    line-height: 22px;
+  }
+
+  @include media("desktop") {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
