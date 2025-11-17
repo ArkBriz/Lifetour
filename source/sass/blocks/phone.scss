@@ -4,11 +4,20 @@
   font-weight: 600;
   color: $white;
 
+  .page-footer & {
+    display: none;
+  }
+
   @include media("tablet") {
     font-size: 16px;
   }
 
   @include media("desktop") {
     font-size: 18px;
+
+    .page-footer & {
+      display: block;
+      color: $black;
+    }
   }
 }
