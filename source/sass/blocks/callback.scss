@@ -1,0 +1,54 @@
+.callback {
+  color: $white;
+  text-align: center;
+  background-color: #5e664e;
+}
+
+.callback__container {
+  padding: 174px 31px;
+
+  @include media("tablet") {
+    padding: 183px 204px;
+  }
+
+  @include media("desktop") {
+    padding: 240px 292px;
+  }
+}
+
+.callback h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+
+  @include media("tablet") {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  @include media("desktop") {
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+}
+
+.callback p {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include media("tablet") {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @include media("desktop") {
+    margin-bottom: 40px;
+  }
+}
