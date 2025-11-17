@@ -10,6 +10,20 @@
   }
 }
 
+.section__header {
+  .gallery & {
+    margin-bottom: 31px;
+
+    @include media("tablet") {
+      margin-bottom: 21px;
+    }
+
+    @include media("desktop") {
+      margin-bottom: 46px;
+    }
+  }
+}
+
 .section__title {
   margin: 0;
   margin-bottom: 42px;
@@ -22,6 +36,10 @@
     margin-bottom: 35px;
   }
 
+  .training__slider & {
+    margin-bottom: 25px;
+  }
+
   .reviews & {
     margin-bottom: 32px;
   }
@@ -30,8 +48,8 @@
     margin-bottom: 37px;
   }
 
-  .training__slider & {
-    margin-bottom: 25px;
+  .gallery & {
+    margin-bottom: 27px;
   }
 
   @include media("tablet") {
@@ -42,8 +60,13 @@
       margin-bottom: 36px;
     }
 
-    .training__slider & {
+    .training__slider &,
+    .gallery & {
       margin-bottom: 30px;
+    }
+
+    .advantages & {
+      margin-bottom: 60px;
     }
   }
 
@@ -51,12 +74,21 @@
     margin-bottom: 53px;
     font-size: 35px;
 
-    .training & {
+    .training &,
+    .reviews & {
       margin-bottom: 38px;
     }
 
     .training__slider & {
       margin-bottom: 20px;
+    }
+
+    .advantages & {
+      margin-bottom: 50px;
+    }
+
+    .gallery & {
+      margin-bottom: 27px;
     }
   }
 }
@@ -75,6 +107,12 @@
 
     @include media("desktop") {
       display: flex;
+    }
+  }
+
+  .gallery & {
+    @include media("desktop") {
+      display: none;
     }
   }
 }
