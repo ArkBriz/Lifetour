@@ -1,17 +1,3 @@
-.tours.section {
-  padding-top: 30px;
-  padding-bottom: 20px;
-
-  @include media("tablet") {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-
-  @include media("desktop") {
-    padding-block: 100px;
-  }
-}
-
 .tours__show-all {
   display: block;
   width: 212px;

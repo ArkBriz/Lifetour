@@ -1,8 +1,6 @@
-.training {
-  padding: 20px 0;
-
-  @include media("tablet") {
-    padding: 40px 0;
+.training.section {
+  @include media("desktop") {
+    padding-block: 40px;
   }
 }
 
