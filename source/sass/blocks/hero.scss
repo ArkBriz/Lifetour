@@ -65,12 +65,18 @@
   }
 }
 
+.hero__slide .button {
+  min-width: 180px;
+  max-width: 280px;
+}
+
 .hero__container {
   display: none;
 
   @include media("desktop") {
     display: flex;
     margin-top: 134px;
+    gap: 10px;
 
     font-size: 12px;
     line-height: 16px;
