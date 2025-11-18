@@ -41,6 +41,20 @@
     }
   }
 
+  .reviews & {
+    margin-bottom: 32px;
+
+    @include media("tablet") {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    @include media("desktop") {
+      margin-bottom: 38px;
+    }
+  }
+
   .gallery & {
     margin-bottom: 31px;
 
@@ -62,15 +76,21 @@
 
   .training > .container > & {
     margin-bottom: 35px;
+
+    @include media("tablet") {
+      margin-bottom: 36px;
+    }
+
+    @include media("desktop") {
+      margin-bottom: 38px;
+    }
   }
 
   @include media("tablet") {
-    margin-bottom: 36px;
     font-size: 25px;
   }
 
   @include media("desktop") {
-    margin-bottom: 38px;
     font-size: 35px;
   }
 }

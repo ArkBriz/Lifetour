@@ -1,32 +1,61 @@
 .reviews-slide {
+  display: grid;
+  gap: 20px;
   width: 290px;
   padding: 20px;
 
   @include media("tablet") {
     width: 565px;
+    grid-template-columns: 186px 1fr;
+    gap: 30px;
   }
 
   @include media("desktop") {
+    grid-template-columns: 258px 1fr;
     width: 700px;
   }
 }
 
+.reviews-slide img {
+  width: 250px;
+  height: 169px;
+  object-fit: cover;
+
+  @include media("tablet") {
+    width: 186px;
+    height: 237px;
+  }
+
+  @include media("desktop") {
+    width: 258px;
+    height: 253px;
+  }
+}
+
 .reviews-slide blockquote {
-  margin: 20px 0 15px;
+  margin: 0;
 }
 
 .reviews-slide p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 
   @include media("tablet") {
     font-size: 12px;
     line-height: 18px;
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
   }
 
   @include media("desktop") {
     font-size: 14px;
     line-height: 22px;
+
+    &:last-of-type {
+      margin-bottom: 2px;
+    }
   }
 }
 
