@@ -3,11 +3,23 @@
   padding: 15px;
 }
 
+.training-slide__container {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 15px;
+}
+
 .training-slide h4 {
   margin: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+}
+
+.training-slide a {
+  width: 24px;
+  height: 24px;
+  outline: 1px solid tomato;
 }
 
 .training-slide p {

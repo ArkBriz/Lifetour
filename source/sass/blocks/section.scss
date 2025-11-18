@@ -19,6 +19,8 @@
     margin-bottom: 42px;
 
     @include media("tablet") {
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 25px;
     }
 
@@ -27,10 +29,15 @@
     }
   }
 
-  .tours & {
+  .training & {
+    margin-bottom: 25px;
+
     @include media("tablet") {
-      display: flex;
-      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    @include media("desktop") {
+      margin-bottom: 20px;
     }
   }
 
@@ -53,11 +60,17 @@
   line-height: 1;
   font-weight: 800;
 
+  .training > .container > & {
+    margin-bottom: 35px;
+  }
+
   @include media("tablet") {
+    margin-bottom: 36px;
     font-size: 25px;
   }
 
   @include media("desktop") {
+    margin-bottom: 38px;
     font-size: 35px;
   }
 }
