@@ -15,6 +15,25 @@
 }
 
 .section__header {
+  .tours & {
+    margin-bottom: 42px;
+
+    @include media("tablet") {
+      margin-bottom: 25px;
+    }
+
+    @include media("desktop") {
+      margin-bottom: 53px;
+    }
+  }
+
+  .tours & {
+    @include media("tablet") {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   .gallery & {
     margin-bottom: 31px;
 
@@ -30,87 +49,22 @@
 
 .section__title {
   margin: 0;
-  margin-bottom: 42px;
-
   font-size: 22px;
   line-height: 1;
   font-weight: 800;
 
-  .training & {
-    margin-bottom: 35px;
-  }
-
-  .training__slider & {
-    margin-bottom: 25px;
-  }
-
-  .reviews & {
-    margin-bottom: 32px;
-  }
-
-  .advantages & {
-    margin-bottom: 37px;
-  }
-
-  .gallery & {
-    margin-bottom: 27px;
-  }
-
-  .contacts & {
-    margin-bottom: 29px;
-  }
-
   @include media("tablet") {
-    margin-bottom: 35px;
     font-size: 25px;
-
-    .training & {
-      margin-bottom: 36px;
-    }
-
-    .training__slider &,
-    .gallery & {
-      margin-bottom: 30px;
-    }
-
-    .advantages & {
-      margin-bottom: 60px;
-    }
-
-    .contacts & {
-      margin-bottom: 20px;
-    }
   }
 
   @include media("desktop") {
-    margin-bottom: 53px;
     font-size: 35px;
-
-    .training &,
-    .reviews & {
-      margin-bottom: 38px;
-    }
-
-    .training__slider & {
-      margin-bottom: 20px;
-    }
-
-    .advantages & {
-      margin-bottom: 50px;
-    }
-
-    .gallery & {
-      margin-bottom: 27px;
-    }
-
-    .contacts & {
-      margin-bottom: 26px;
-    }
   }
 }
 
 .section__navigation {
   display: none;
+  gap: 4px;
 
   @include media("tablet") {
     display: flex;
