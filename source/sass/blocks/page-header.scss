@@ -10,3 +10,55 @@
     padding-block: 32px;
   }
 }
+
+.page-header .container {
+  display: grid;
+  grid-template-columns: 1fr 142px;
+  gap: 14px;
+  align-items: center;
+
+  @include media("tablet") {
+    grid-template-columns: 1fr 142px 1fr;
+  }
+
+  @include media("desktop") {
+    grid-template-columns: 1fr 820px 1fr;
+  }
+}
+
+.page-header__nav {
+  display: none;
+
+  @include media("desktop") {
+    display: block;
+
+    & .nav__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.page-header__toggler {
+  width: 26px;
+  height: 26px;
+
+  background-color: transparent;
+  border: none;
+
+  outline: 1px solid tomato;
+
+  @include media("desktop") {
+    display: none;
+  }
+}
+
+.page-header__phone {
+  grid-column: 2 / 3;
+  justify-self: end;
+
+  @include media("tablet") {
+    grid-column: auto;
+  }
+}
