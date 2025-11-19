@@ -1,0 +1,11 @@
+.field {
+  padding: 17px 15px;
+  font-size: 16px;
+  line-height: 1;
+  border: none;
+  border-radius: 2px;
+
+  @include media("tablet") {
+    padding: 20px 30px;
+  }
+}

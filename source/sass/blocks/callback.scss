@@ -12,7 +12,7 @@
   }
 
   @include media("desktop") {
-    padding: 240px 292px;
+    padding: 292px 240px;
   }
 }
 
@@ -50,5 +50,30 @@
 
   @include media("desktop") {
     margin-bottom: 40px;
+  }
+}
+
+.callback form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media("tablet") {
+    gap: 11px;
+  }
+
+  @include media("desktop") {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.callback .field {
+  flex-grow: 1;
+}
+
+.callback .button {
+  @include media("desktop") {
+    width: 180px;
   }
 }
