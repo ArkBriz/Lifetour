@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.advantages__slider .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include media("tablet") {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
 .advantages__slide {
   width: 290px;
   padding: 82px 10px 20px;

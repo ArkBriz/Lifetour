@@ -86,12 +86,24 @@
     }
   }
 
+  .advantages &  {
+    margin-bottom: 37px;
+  }
+
   @include media("tablet") {
     font-size: 25px;
+
+    .advantages &  {
+      margin-bottom: 60px;
+    }
   }
 
   @include media("desktop") {
     font-size: 35px;
+
+    .advantages &  {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -110,6 +122,8 @@
 
     @include media("desktop") {
       display: flex;
+      justify-content: center;
+      margin-top: 50px;
     }
   }
 
