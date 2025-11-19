@@ -4,23 +4,8 @@
   list-style-type: none;
 }
 
-.nav__item {
-  padding-block: 11px;
-
-  .page-footer__nav & {
-    text-align: center;
-  }
-
-  @include media("tablet") {
-    padding-block: 13px;
-  }
-
-  @include media("desktop") {
-    padding: 23px 15px;
-  }
-}
-
 .nav__link {
+  display: block;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
@@ -29,6 +14,8 @@
   color: $white;
 
   .page-footer__nav & {
+    padding-top: 7px;
+    padding-bottom: 8px;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;

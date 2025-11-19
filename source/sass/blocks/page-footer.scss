@@ -1,8 +1,34 @@
 .page-footer {
   padding-block: 23px 20px;
+  text-align: center;
+}
+
+.page-footer__container {
+  @include media("tablet") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.page-footer__nav .nav__list {
+  column-count: 2;
+  column-gap: 50px;
+
+  @include media("tablet") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .page-footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
   margin: 0;
   margin-block: 23px;
   padding: 0;
@@ -24,6 +50,10 @@
   padding: 7px;
 
   outline: 1px solid tomato;
+}
+
+.page-footer__phone {
+  white-space: nowrap;
 }
 
 .page-footer__policy {
