@@ -59,6 +59,9 @@
     margin-bottom: 31px;
 
     @include media("tablet") {
+      display: grid;
+      grid-template-columns: 1fr 78px;
+      align-items: end;
       margin-bottom: 21px;
     }
 
@@ -88,6 +91,10 @@
 
   .advantages &  {
     margin-bottom: 37px;
+  }
+
+  .gallery & {
+    margin-bottom: 27px;
   }
 
   @include media("tablet") {

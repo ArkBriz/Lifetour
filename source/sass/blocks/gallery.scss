@@ -2,6 +2,7 @@
   margin: 0;
 
   @include media("tablet") {
+    grid-column: 1 / 2;
     width: 420px;
   }
 
