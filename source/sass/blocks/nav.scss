@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  .page-header__nav & {
+    @include media("desktop") {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
 }
 
 .nav__link {
@@ -12,6 +21,10 @@
   letter-spacing: 4%;
   text-transform: uppercase;
   color: $white;
+
+  .page-header__nav & {
+    padding-block: 11px;
+  }
 
   .page-footer__nav & {
     padding-top: 7px;
@@ -26,6 +39,10 @@
   @include media("tablet") {
     font-size: 16px;
     line-height: 16px;
+
+    .page-header__nav & {
+      padding-block: 13px;
+    }
   }
 
   @include media("desktop") {
