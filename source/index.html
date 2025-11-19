@@ -449,6 +449,7 @@
             <header class="section__header">
               <h2 class="section__title">Фотогалерея</h2>
               <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+
               <nav class="section__navigation">
                 <button class="button swiper-button-prev" type="button">
                   <span class="visually-hidden">Предыдущее фото</span>
@@ -523,10 +524,14 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="contacts__map">
-            <img src="img/map/map-desktop.jpg" width="600" height="324" alt="Карта с указанием местоположения.">
-          </div>
+        <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
+            <img src="img/map/map-mobile.jpg" alt="Карта с указанием местоположения.">
+          </picture>
         </div>
       </section>
     </main>

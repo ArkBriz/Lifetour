@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__container {
   margin-bottom: 30px;
 
@@ -6,6 +10,7 @@
   }
 
   @include media("desktop") {
+    width: 500px;
     margin-bottom: 0;
   }
 }
@@ -28,9 +33,26 @@
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include media("tablet") {
+    flex-direction: row;
+    gap: 39px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @include media("desktop") {
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 
 .contacts__item {
@@ -67,5 +89,14 @@
   @include media("desktop") {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.contacts__map {
+  @include media("desktop") {
+    position: absolute;
+    top: 149px;
+    right: 120px;
+    width: 600px;
   }
 }

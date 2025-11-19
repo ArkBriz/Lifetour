@@ -97,11 +97,19 @@
     margin-bottom: 27px;
   }
 
+  .contacts & {
+    margin-bottom: 29px;
+  }
+
   @include media("tablet") {
     font-size: 25px;
 
     .advantages &  {
       margin-bottom: 60px;
+    }
+
+    .contacts & {
+      margin-bottom: 20px;
     }
   }
 
@@ -110,6 +118,10 @@
 
     .advantages &  {
       margin-bottom: 50px;
+    }
+
+    .contacts & {
+      margin-bottom: 26px;
     }
   }
 }
