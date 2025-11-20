@@ -10,15 +10,16 @@
   <body class="page-body">
     <header class="page-header">
       <div class="container">
+        <!-- Add modifier open to button when menu is open -->
         <button class="page-header__toggler" type="button" aria-controls="nav">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Кнопка меню</span>
         </button>
         <a class="page-header__logo" href="#">
           <svg width="142" height="42" aria-label="Логотип Lifetour.">
             <use href="/__spritemap#sprite-header-logo"></use>
           </svg>
         </a>
-
+        <!-- Remove modifier closed to open menu -->
         <nav class="nav page-header__nav page-header__nav--closed" id="nav">
           <ul class="nav__list">
             <li class="nav__item">

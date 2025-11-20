@@ -56,13 +56,50 @@
 }
 
 .page-header__toggler {
+  position: relative;
   width: 26px;
   height: 26px;
 
   background-color: transparent;
   border: none;
 
-  outline: 1px solid tomato;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2.5px;
+    left: 0;
+    background-color: $white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &::before {
+    width: 26px;
+    top: 2px;
+    box-shadow: 0 19px 0 $white;
+  }
+
+  &::after {
+    width: 18px;
+    top: 12px;
+  }
+
+  &--open::before,
+  &--open::after {
+    width: 35px;
+    top: 11px;
+    left: -5px;
+  }
+
+  &--open::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &--open::after {
+    transform: rotate(-45deg);
+  }
 
   @include media("desktop") {
     display: none;
