@@ -1,0 +1,15 @@
+.page-main {
+  background-image: url("../../img/bg/clouds-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 346px;
+  background-position: top 463px right -205px;
+
+  @include media("tablet") {
+    background-size: 600px;
+    background-position: top 920px right -178px;
+  }
+
+  @include media("desktop") {
+    background-position: top 590px right 0;
+  }
+}

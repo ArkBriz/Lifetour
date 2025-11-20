@@ -11,14 +11,53 @@
 .hero__slide {
   padding-top: 144px;
   padding-bottom: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--bg-1 {
+    background-image: url("../../img/bg/caucasus-bg-mobile.jpg");
+  }
+
+  &--bg-2 {
+    background-image: url("../../img/bg/kamchatka-bg-mobile.jpg");
+  }
+
+  &--bg-3 {
+    background-image: url("../../img/bg/altai-bg-mobile.jpg");
+  }
 
   @include media("tablet") {
     padding-top: 342px;
     padding-bottom: 402px;
+
+    &--bg-1 {
+      background-image: url("../../img/bg/caucasus-bg-tablet.jpg");
+    }
+
+    &--bg-2 {
+      background-image: url("../../img/bg/kamchatka-bg-tablet.jpg");
+    }
+
+    &--bg-3 {
+      background-image: url("../../img/bg/altai-bg-tablet.jpg");
+    }
   }
 
   @include media("desktop") {
+    padding-top: 200px;
     padding-bottom: 80px;
+
+    &--bg-1 {
+      background-image: url("../../img/bg/caucasus-bg-desktop.jpg");
+    }
+
+    &--bg-2 {
+      background-image: url("../../img/bg/kamchatka-bg-desktop.jpg");
+    }
+
+    &--bg-3 {
+      background-image: url("../../img/bg/altai-bg-desktop.jpg");
+    }
   }
 }
 

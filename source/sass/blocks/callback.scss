@@ -2,6 +2,19 @@
   color: $white;
   text-align: center;
   background-color: #5e664e;
+  background-image: url("../../img/bg/callback-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @include media("tablet") {
+    background-size: 1520px;
+    background-position: -455px center;
+  }
+
+  @include media("desktop") {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .callback__container {

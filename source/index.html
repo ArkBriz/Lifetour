@@ -47,7 +47,7 @@
       </div>
     </header>
 
-    <main class="main-container">
+    <main class="page-main main-container">
       <h1 class="visually-hidden">Сайт Lifetour</h1>
 
       <section class="hero">
@@ -55,7 +55,7 @@
 
         <div class="hero__slider swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide hero__slide hero__slide--caucasus">
+            <div class="swiper-slide hero__slide hero__slide--bg-1">
               <div class="container">
                 <div class="hero__text-content">
                   <h3>Захватывающие<br> вершины Кавказа</h3>
@@ -70,7 +70,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide hero__slide hero__slide--kamchatka">
+            <div class="swiper-slide hero__slide hero__slide--bg-2">
               <div class="container">
                 <div class="hero__text-content">
                   <h3>Невероятная природа Камчатки</h3>
@@ -85,7 +85,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide hero__slide hero__slide--altai">
+            <div class="swiper-slide hero__slide hero__slide--bg-3">
               <div class="container">
                 <div class="hero__text-content">
                   <h3>Магические пейзажи<br> Алтайского Края</h3>
@@ -99,33 +99,31 @@
                 </div>
               </div>
             </div>
-
-            <div class="swiper-pagination"></div>
           </div>
 
           <div class="hero__pagination swiper-pagination"></div>
         </div>
       </section>
 
-      <div class="section-container">
-        <section class="section tours" id="tours">
-          <div class="container">
-            <div class="swiper">
-              <header class="section__header">
-                <h2 class="section__title">Ближайшие туры</h2>
-                <nav class="section__navigation">
-                  <button class="button swiper-button-prev" type="button">
-                    <span class="visually-hidden">Предыдущий тур</span>
-                  </button>
-                  <button class="button swiper-button-next" type="button">
-                    <span class="visually-hidden">Следующий тур</span>
-                  </button>
-                </nav>
-              </header>
+      <section class="section tours" id="tours">
+        <div class="container">
+          <div class="swiper">
+            <header class="section__header">
+              <h2 class="section__title">Ближайшие туры</h2>
+              <nav class="section__navigation">
+                <button class="button swiper-button-prev" type="button">
+                  <span class="visually-hidden">Предыдущий тур</span>
+                </button>
+                <button class="button swiper-button-next" type="button">
+                  <span class="visually-hidden">Следующий тур</span>
+                </button>
+              </nav>
+            </header>
 
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <article class="tours-slide tours-slide--caucasus">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="tours-slide tours-slide--bg-1">
+                  <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Путешествие<br> вокруг Эльбруса</h3>
                     <a class="button tours-slide__location" href="#">Кавказ</a>
                     <ul class="tours-slide__duration">
@@ -148,11 +146,13 @@
                         <dd class="tours-slide__desc">до 15 чел.</dd>
                       </div>
                     </dl>
-                  </article>
-                </div>
+                  </div>
+                </article>
+              </div>
 
-                <div class="swiper-slide">
-                  <article class="tours-slide tours-slide--altai">
+              <div class="swiper-slide">
+                <article class="tours-slide tours-slide--bg-2">
+                  <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Путь к подножию<br> Белухи</h3>
                     <a class="button tours-slide__location" href="#">Алтай</a>
                     <ul class="tours-slide__duration">
@@ -175,11 +175,13 @@
                         <dd class="tours-slide__desc">до 25 чел.</dd>
                       </div>
                     </dl>
-                  </article>
-                </div>
+                  </div>
+                </article>
+              </div>
 
-                <div class="swiper-slide">
-                  <article class="tours-slide tours-slide--adygea">
+              <div class="swiper-slide">
+                <article class="tours-slide tours-slide--bg-3">
+                  <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Через Фишт <br>к Чёрному морю и обратно</h3>
                     <a class="button tours-slide__location" href="#">Адыгея</a>
                     <ul class="tours-slide__duration">
@@ -202,11 +204,13 @@
                         <dd class="tours-slide__desc">до 22 чел.</dd>
                       </div>
                     </dl>
-                  </article>
-                </div>
+                  </div>
+                </article>
+              </div>
 
-                <div class="swiper-slide">
-                  <article class="tours-slide tours-slide--ural">
+              <div class="swiper-slide">
+                <article class="tours-slide tours-slide--bg-4">
+                  <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Восхождение<br> Манарага</h3>
                     <a class="button tours-slide__location" href="#">Урал</a>
                     <ul class="tours-slide__duration">
@@ -227,104 +231,104 @@
                         <dd class="tours-slide__desc">до 7 чел.</dd>
                       </div>
                     </dl>
-                  </article>
-                </div>
+                  </div>
+                </article>
               </div>
             </div>
-            <a class="tours__show-all" href="#">Показать все туры</a>
           </div>
-        </section>
+          <a class="tours__show-all" href="#">Показать все туры</a>
+        </div>
+      </section>
 
-        <section class="section training" id="training">
-          <div class="container">
-            <h2 class="section__title">Обучение</h2>
-            <p>Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+      <section class="section training" id="training">
+        <div class="container">
+          <h2 class="section__title">Обучение</h2>
+          <p>Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
 
-            <div class="training__slider swiper">
-              <header class="section__header">
-                <h3 class="section__title">Наши инструкторы</h3>
-                <nav class="section__navigation">
-                  <button class="button swiper-button-prev" type="button">
-                    <span class="visually-hidden">Предыдущий инструктор</span>
-                  </button>
-                  <button class="button swiper-button-next" type="button">
-                    <span class="visually-hidden">Следующий инструктор</span>
-                  </button>
-                </nav>
-              </header>
+          <div class="training__slider swiper">
+            <header class="section__header">
+              <h3 class="section__title">Наши инструкторы</h3>
+              <nav class="section__navigation">
+                <button class="button swiper-button-prev" type="button">
+                  <span class="visually-hidden">Предыдущий инструктор</span>
+                </button>
+                <button class="button swiper-button-next" type="button">
+                  <span class="visually-hidden">Следующий инструктор</span>
+                </button>
+              </nav>
+            </header>
 
-              <div class="swiper-wrapper">
-                <div class="training-slide swiper-slide">
-                  <img src="img/trainers/alexander.jpg" width="260" height="200" alt="">
-                  <div class="training-slide__container">
-                    <h4>Александр<br> Прокофьев</h4>
-                    <a href="#">
-                      <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
-                    </a>
-                  </div>
-                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+            <div class="swiper-wrapper">
+              <div class="training-slide swiper-slide">
+                <img src="img/trainers/alexander.jpg" width="260" height="200" alt="">
+                <div class="training-slide__container">
+                  <h4>Александр<br> Прокофьев</h4>
+                  <a href="#">
+                    <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                  </a>
                 </div>
-                <div class="training-slide swiper-slide">
-                  <img src="img/trainers/svetlana.jpg" width="260" height="200" alt="">
-                  <div class="training-slide__container">
-                    <h4>Светлана<br> Афиногенова</h4>
-                    <a href="#">
-                      <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
-                    </a>
-                  </div>
-                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </div>
+              <div class="training-slide swiper-slide">
+                <img src="img/trainers/svetlana.jpg" width="260" height="200" alt="">
+                <div class="training-slide__container">
+                  <h4>Светлана<br> Афиногенова</h4>
+                  <a href="#">
+                    <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                  </a>
                 </div>
-                <div class="training-slide swiper-slide">
-                  <img src="img/trainers/nadezhda.jpg" width="260" height="200" alt="">
-                  <div class="training-slide__container">
-                    <h4>Надежда<br> Колесниченко</h4>
-                    <a href="#">
-                      <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
-                    </a>
-                  </div>
-                  <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+              </div>
+              <div class="training-slide swiper-slide">
+                <img src="img/trainers/nadezhda.jpg" width="260" height="200" alt="">
+                <div class="training-slide__container">
+                  <h4>Надежда<br> Колесниченко</h4>
+                  <a href="#">
+                    <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                  </a>
                 </div>
-                <div class="training-slide swiper-slide">
-                  <img src="img/trainers/fedor.jpg" width="260" height="200" alt="">
-                  <div class="training-slide__container">
-                    <h4>Федор<br> Кайгородов</h4>
-                    <a href="#">
-                      <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
-                    </a>
-                  </div>
-                  <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+              </div>
+              <div class="training-slide swiper-slide">
+                <img src="img/trainers/fedor.jpg" width="260" height="200" alt="">
+                <div class="training-slide__container">
+                  <h4>Федор<br> Кайгородов</h4>
+                  <a href="#">
+                    <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                  </a>
                 </div>
-                <div class="training-slide swiper-slide">
-                  <img src="img/trainers/daniel.jpg" width="260" height="200" alt="">
-                  <div class="training-slide__container">
-                    <h4>Даниэль<br> Васнецов</h4>
-                    <a href="#">
-                      <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
-                    </a>
-                  </div>
-                  <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+              </div>
+              <div class="training-slide swiper-slide">
+                <img src="img/trainers/daniel.jpg" width="260" height="200" alt="">
+                <div class="training-slide__container">
+                  <h4>Даниэль<br> Васнецов</h4>
+                  <a href="#">
+                    <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                  </a>
                 </div>
+                <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
               </div>
             </div>
-
-            <h3 class="training__process-title">Процесс обучения</h3>
-            <ul class="training__process-list">
-              <li class="training__process-item">
-                Изучение спортивного туристского движения
-              </li>
-              <li class="training__process-item">
-                Подготовка и техническое снаряжение в походах
-              </li>
-              <li class="training__process-item">
-                Лекции<br> по окружающей среде, экологии и гигиене
-              </li>
-              <li class="training__process-item">
-                Разъяснение<br> сложности горных препятствий
-              </li>
-            </ul>
           </div>
-        </section>
-      </div>
+
+          <h3 class="training__process-title">Процесс обучения</h3>
+          <ul class="training__process-list">
+            <li class="training__process-item">
+              Изучение спортивного туристского движения
+            </li>
+            <li class="training__process-item">
+              Подготовка и техническое снаряжение в походах
+            </li>
+            <li class="training__process-item">
+              Лекции<br> по окружающей среде, экологии и гигиене
+            </li>
+            <li class="training__process-item">
+              Разъяснение<br> сложности горных препятствий
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="section about" id="about">
         <div class="container">
@@ -445,12 +449,11 @@
       </section>
 
       <section class="section gallery" id="gallery">
-        <div class="container">
-          <div class="gallery__slider swiper">
+        <div class="gallery__slider swiper">
+          <div class="container">
             <header class="section__header">
               <h2 class="section__title">Фотогалерея</h2>
-              <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
-
+              <p>Добавляйте фото с хэштегом #лайфтур,<bi> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
               <nav class="section__navigation">
                 <button class="button swiper-button-prev" type="button">
                   <span class="visually-hidden">Предыдущее фото</span>
@@ -460,29 +463,29 @@
                 </button>
               </nav>
             </header>
+          </div>
 
-            <div class="swiper-wrapper">
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-1.jpg" width="284" height="463" alt="Мужчина с рюкзаком стоит на вершине горы и смотрит вдаль.">
-              </div>
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-2.jpg" width="284" height="223" alt="Компания туристов сидит у костра.">
-              </div>
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-3.jpg" width="284" height="223" alt="Рука с компасом на фоне горы.">
-              </div>
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-4.jpg" width="284" height="463" alt="Группа туристов восходит на вершину, держась за веревку.">
-              </div>
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-5.jpg" width="284" height="223" alt="Группа туристов идет по снегу вдоль горной речки.">
-              </div>
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-6.jpg" width="284" height="223" alt="Палатка на фоне ночного звездного неба.">
-              </div>
-              <div class="gallery__slide swiper-slide">
-                <img src="img/gallery/photo-7.jpg" width="284" height="463" alt="Двое мужчин стоят у костра.">
-              </div>
+          <div class="swiper-wrapper">
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-1.jpg" width="284" height="463" alt="Мужчина с рюкзаком стоит на вершине горы и смотрит вдаль.">
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-2.jpg" width="284" height="223" alt="Компания туристов сидит у костра.">
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-3.jpg" width="284" height="223" alt="Рука с компасом на фоне горы.">
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-4.jpg" width="284" height="463" alt="Группа туристов восходит на вершину, держась за веревку.">
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-5.jpg" width="284" height="223" alt="Группа туристов идет по снегу вдоль горной речки.">
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-6.jpg" width="284" height="223" alt="Палатка на фоне ночного звездного неба.">
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img src="img/gallery/photo-7.jpg" width="284" height="463" alt="Двое мужчин стоят у костра.">
             </div>
           </div>
         </div>

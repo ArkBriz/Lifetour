@@ -1,3 +1,26 @@
+.about {
+  padding-top: 420px;
+  background-image: url("../../img/bg/about-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 20px;
+
+  @include media("tablet") {
+    padding-top: 0;
+    background-image: url("../../img/bg/about-bg-tablet.jpg");
+    background-size: 545px;
+    background-position: 0 115px;
+  }
+
+  @include media("desktop") {
+    padding-top: 100px;
+    background-image: url("../../img/bg/about-bg-desktop.jpg");
+    background-size: contain;
+    background-position: 0 15px;
+  }
+
+}
+
 .about__container {
   width: 290px;
 

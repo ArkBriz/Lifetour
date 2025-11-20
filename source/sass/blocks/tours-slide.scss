@@ -1,13 +1,30 @@
 .tours-slide {
-  display: grid;
-  grid-template-columns: 1fr 148px;
   width: 290px;
   padding: 224px 20px 30px;
   font-size: 12px;
   line-height: 1;
   font-weight: 500;
   color: $white;
+
   background-color: #4995ac;
+  background-size: cover;
+  background-position: center 0;
+
+  &--bg-1 {
+    background-image: url("../../img/bg/tours-elbrus.jpg");
+  }
+
+  &--bg-2 {
+    background-image: url("../../img/bg/tours-belukha.jpg");
+  }
+
+  &--bg-3 {
+    background-image: url("../../img/bg/tours-fisht.jpg");
+  }
+
+  &--bg-4 {
+    background-image: url("../../img/bg/tours-manaraga.jpg");
+  }
 
   @include media("tablet") {
     width: 330px;
@@ -17,6 +34,12 @@
     width: 380px;
     padding-top: 196px;
   }
+}
+
+.tours-slide__container {
+  display: grid;
+  grid-template-columns: 1fr 148px;
+  align-items: center;
 }
 
 .tours-slide__title {
