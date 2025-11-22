@@ -57,6 +57,27 @@
 
 .contacts__item {
   padding-left: 34px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+
+  &--phone {
+    background-image: url("/__spritemap#sprite-phone-view");
+  }
+  &--mail {
+    background-image: url("/__spritemap#sprite-mail-view");
+  }
+  &--address {
+    background-image: url("/__spritemap#sprite-pin-stroke-view");
+  }
+
+  @include media("tablet") {
+    background-size: 24px;
+  }
+
+  @include media("desktop") {
+    padding-left: 56px;
+    background-size: 26px;
+  }
 }
 
 .contacts__title {

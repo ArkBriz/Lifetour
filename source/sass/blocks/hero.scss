@@ -122,3 +122,21 @@
   }
 }
 
+.hero__details {
+  padding: 14px 20px 14px 40px;
+
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center left 15px;
+
+  border: 1px solid $white;
+
+  &:first-child {
+    background-image: url("/__spritemap#sprite-moon-view");
+  }
+
+  &:last-child {
+    background-image: url("/__spritemap#sprite-level-view");
+  }
+}
+

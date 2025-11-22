@@ -128,6 +128,42 @@
   }
 }
 
+h2.section__title,
+.about__container h2 {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: -70%;
+    left: 0;
+    right: 0;
+    font-size: 26px;
+    line-height: 1;
+    color: rgba($black, 0.03);
+    white-space: nowrap;
+    z-index: -1;
+    pointer-events: none;
+
+    @include media("tablet") {
+      font-size: 40px;
+      top: -55%;
+    }
+
+    @include media("desktop") {
+      font-size: 55px;
+    }
+  }
+}
+
+h2.section__title::before {
+  content: attr(data-title);
+}
+
+.about__container h2::before {
+  content: "О нас";
+}
+
 .section__navigation {
   display: none;
   gap: 4px;
@@ -152,5 +188,30 @@
     @include media("desktop") {
       display: none;
     }
+  }
+}
+
+.section__navigation .button {
+  width: 37px;
+  height: 35px;
+  padding: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 35px;
+    background-color: $white;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 15px;
+  }
+
+  &:first-child::before {
+    mask-image: url("/__spritemap#sprite-arrow-left-view");
+  }
+
+  &:last-child::before {
+    mask-image: url("/__spritemap#sprite-arrow-right-view");
   }
 }

@@ -38,25 +38,42 @@
 
 .tours-slide__container {
   display: grid;
-  grid-template-columns: 1fr 148px;
+  grid-template-columns: 1fr 155px;
   align-items: center;
 }
 
 .tours-slide__title {
+  position: relative;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   margin-block: 15px 31px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 1px;
+    bottom: -15px;
+    background-color: rgba($white, 0.3);
+  }
 }
 
 .tours-slide__location {
   justify-self: start;
   padding: 8px 12px 8px 34px;
+  font-size: 12px;
+
+  background-image: url("/__spritemap#sprite-pin-filled-view");
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: 12px 8px;
 }
 
-.tours-slide__duration {
+.tours-slide__info {
   justify-self: end;
   display: flex;
   gap: 14px;
@@ -65,7 +82,22 @@
   list-style-type: none;
 }
 
-.tours-slide__info {
+.tours-slide__info-item {
+  padding: 4px 0 4px 32px;
+  background-repeat: no-repeat;
+  background-position: 10px 2px;
+  background-size: 16px;
+
+  &:first-child {
+    background-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &:last-child {
+    background-image: url("/__spritemap#sprite-moon-view");
+  }
+}
+
+.tours-slide__details {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
@@ -80,4 +112,26 @@
 .tours-slide__desc {
   margin: 0;
   font-weight: 700;
+}
+
+.tours-slide__stars {
+  display: flex;
+  gap: 1.7px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tours-slide__star {
+  width: 15px;
+  height: 13px;
+  background: url("/__spritemap#sprite-star-empty-view") no-repeat center / contain;
+}
+
+.tours-slide__difficulty[data-stars="1"] .tours-slide__star:nth-child(-n+1),
+.tours-slide__difficulty[data-stars="2"] .tours-slide__star:nth-child(-n+2),
+.tours-slide__difficulty[data-stars="3"] .tours-slide__star:nth-child(-n+3),
+.tours-slide__difficulty[data-stars="4"] .tours-slide__star:nth-child(-n+4),
+.tours-slide__difficulty[data-stars="5"] .tours-slide__star:nth-child(-n+5) {
+  background-image: url("/__spritemap#sprite-star-view");
 }

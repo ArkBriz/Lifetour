@@ -64,8 +64,8 @@
                 <a class="button" href="#">Смотреть тур</a>
 
                 <div class="hero__container">
-                  <div class="hero__specifics">6 дней/5 ночей</div>
-                  <div class="hero__specifics">Высокая сложность</div>
+                  <div class="hero__details">6 дней/5 ночей</div>
+                  <div class="hero__details">Высокая сложность</div>
                 </div>
               </div>
             </div>
@@ -79,8 +79,8 @@
                 <a class="button" href="#">Смотреть тур</a>
 
                 <div class="hero__container">
-                  <div class="hero__specifics">9 дней/10 ночей</div>
-                  <div class="hero__specifics">Средняя сложность</div>
+                  <div class="hero__details">9 дней/10 ночей</div>
+                  <div class="hero__details">Средняя сложность</div>
                 </div>
               </div>
             </div>
@@ -94,8 +94,8 @@
                 <a class="button" href="#">Смотреть тур</a>
 
                 <div class="hero__container">
-                  <div class="hero__specifics">8 дней/7 ночей</div>
-                  <div class="hero__specifics">Лёгкая сложность</div>
+                  <div class="hero__details">8 дней/7 ночей</div>
+                  <div class="hero__details">Лёгкая сложность</div>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@
         <div class="container">
           <div class="swiper">
             <header class="section__header">
-              <h2 class="section__title">Ближайшие туры</h2>
+              <h2 class="section__title" data-title="Ближайшие туры">Ближайшие туры</h2>
               <nav class="section__navigation">
                 <button class="button swiper-button-prev" type="button">
                   <span class="visually-hidden">Предыдущий тур</span>
@@ -126,22 +126,29 @@
                   <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Путешествие<br> вокруг Эльбруса</h3>
                     <a class="button tours-slide__location" href="#">Кавказ</a>
-                    <ul class="tours-slide__duration">
-                      <li class="tours-slide__duration-item">4 дня</li>
-                      <li class="tours-slide__duration-item">3 ночи</li>
+                    <ul class="tours-slide__info">
+                      <li class="tours-slide__info-item">4 дня</li>
+                      <li class="tours-slide__info-item">3 ночи</li>
                     </ul>
-                    <dl class="tours-slide__info">
-                      <div class="tours-slide__info-container">
+                    <dl class="tours-slide__details">
+                      <div class="tours-slide__difficulty" data-stars="4">
                         <dt class="tours-slide__term">Сложность:</dt>
                         <dd class="tours-slide__desc">
-                          <span class="visually-hidden">4 звезды</span>
+                          <span class="visually-hidden">4 из 5</span>
+                          <ul class="tours-slide__stars" aria-hidden="true">
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                          </ul>
                         </dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Даты набора:</dt>
                         <dd class="tours-slide__desc">12.06–19.06</dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Группа:</dt>
                         <dd class="tours-slide__desc">до 15 чел.</dd>
                       </div>
@@ -155,22 +162,29 @@
                   <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Путь к подножию<br> Белухи</h3>
                     <a class="button tours-slide__location" href="#">Алтай</a>
-                    <ul class="tours-slide__duration">
-                      <li class="tours-slide__duration-item">14 дней</li>
-                      <li class="tours-slide__duration-item">13 ночей</li>
+                    <ul class="tours-slide__info">
+                      <li class="tours-slide__info-item">14 дней</li>
+                      <li class="tours-slide__info-item">13 ночей</li>
                     </ul>
-                    <dl class="tours-slide__info">
-                      <div class="tours-slide__info-container">
+                    <dl class="tours-slide__details">
+                      <div class="tours-slide__difficulty" data-stars="4">
                         <dt class="tours-slide__term">Сложность:</dt>
                         <dd class="tours-slide__desc">
-                          <span class="visually-hidden">4 звезды</span>
+                          <span class="visually-hidden">4 из 5</span>
+                          <ul class="tours-slide__stars" aria-hidden="true">
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                          </ul>
                         </dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Даты набора:</dt>
                         <dd class="tours-slide__desc">14.06–23.06</dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Группа:</dt>
                         <dd class="tours-slide__desc">до 25 чел.</dd>
                       </div>
@@ -184,22 +198,29 @@
                   <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Через Фишт <br>к Чёрному морю и обратно</h3>
                     <a class="button tours-slide__location" href="#">Адыгея</a>
-                    <ul class="tours-slide__duration">
-                      <li class="tours-slide__duration-item">7 дней</li>
-                      <li class="tours-slide__duration-item">6 ночей</li>
+                    <ul class="tours-slide__info">
+                      <li class="tours-slide__info-item">7 дней</li>
+                      <li class="tours-slide__info-item">6 ночей</li>
                     </ul>
-                    <dl class="tours-slide__info">
-                      <div class="tours-slide__info-container">
+                    <dl class="tours-slide__details">
+                      <div class="tours-slide__difficulty" data-stars="4">
                         <dt class="tours-slide__term">Сложность:</dt>
                         <dd class="tours-slide__desc">
-                          <span class="visually-hidden">4 звезды</span>
+                          <span class="visually-hidden">4 из 5</span>
+                          <ul class="tours-slide__stars" aria-hidden="true">
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                          </ul>
                         </dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Даты набора:</dt>
                         <dd class="tours-slide__desc">15.07–19.07</dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Группа:</dt>
                         <dd class="tours-slide__desc">до 22 чел.</dd>
                       </div>
@@ -213,20 +234,29 @@
                   <div class="tours-slide__container">
                     <h3 class="tours-slide__title">Восхождение<br> Манарага</h3>
                     <a class="button tours-slide__location" href="#">Урал</a>
-                    <ul class="tours-slide__duration">
-                      <li class="tours-slide__duration-item">9 дней</li>
-                      <li class="tours-slide__duration-item">10 ночей</li>
+                    <ul class="tours-slide__info">
+                      <li class="tours-slide__info-item">9 дней</li>
+                      <li class="tours-slide__info-item">10 ночей</li>
                     </ul>
-                    <dl class="tours-slide__info">
-                      <div class="tours-slide__info-container">
+                    <dl class="tours-slide__details">
+                      <div class="tours-slide__difficulty" data-stars="5">
                         <dt class="tours-slide__term">Сложность:</dt>
-                        <dd class="tours-slide__desc">5 звезд</dd>
+                        <dd class="tours-slide__desc">
+                          <span class="visually-hidden">5 из 5</span>
+                          <ul class="tours-slide__stars" aria-hidden="true">
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                            <li class="tours-slide__star"></li>
+                          </ul>
+                        </dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Даты набора:</dt>
                         <dd class="tours-slide__desc">12.07–19.07</dd>
                       </div>
-                      <div class="tours-slide__info-container">
+                      <div>
                         <dt class="tours-slide__term">Группа:</dt>
                         <dd class="tours-slide__desc">до 7 чел.</dd>
                       </div>
@@ -242,7 +272,7 @@
 
       <section class="section training" id="training">
         <div class="container">
-          <h2 class="section__title">Обучение</h2>
+          <h2 class="section__title" data-title="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
 
           <div class="training__slider swiper">
@@ -265,6 +295,7 @@
                   <h4>Александр<br> Прокофьев</h4>
                   <a href="#">
                     <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                    <span class="training-slide__icon"></span>
                   </a>
                 </div>
                 <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
@@ -275,6 +306,7 @@
                   <h4>Светлана<br> Афиногенова</h4>
                   <a href="#">
                     <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                    <span class="training-slide__icon"></span>
                   </a>
                 </div>
                 <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
@@ -285,6 +317,7 @@
                   <h4>Надежда<br> Колесниченко</h4>
                   <a href="#">
                     <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                    <span class="training-slide__icon"></span>
                   </a>
                 </div>
                 <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
@@ -295,6 +328,7 @@
                   <h4>Федор<br> Кайгородов</h4>
                   <a href="#">
                     <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                    <span class="training-slide__icon"></span>
                   </a>
                 </div>
                 <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
@@ -305,6 +339,7 @@
                   <h4>Даниэль<br> Васнецов</h4>
                   <a href="#">
                     <span class="visually-hidden">Ссылка на страницу инструктора Вконтакте</span>
+                    <span class="training-slide__icon"></span>
                   </a>
                 </div>
                 <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
@@ -314,16 +349,16 @@
 
           <h3 class="training__process-title">Процесс обучения</h3>
           <ul class="training__process-list">
-            <li class="training__process-item">
+            <li class="training__process-item training__process-item--map">
               Изучение спортивного туристского движения
             </li>
-            <li class="training__process-item">
+            <li class="training__process-item training__process-item--boot">
               Подготовка и техническое снаряжение в походах
             </li>
-            <li class="training__process-item">
+            <li class="training__process-item training__process-item--pine-tree">
               Лекции<br> по окружающей среде, экологии и гигиене
             </li>
-            <li class="training__process-item">
+            <li class="training__process-item training__process-item--mountains">
               Разъяснение<br> сложности горных препятствий
             </li>
           </ul>
@@ -356,7 +391,7 @@
         <div class="container">
           <div class="reviews__slider swiper">
             <header class="section__header">
-              <h2 class="section__title">Отзывы</h2>
+              <h2 class="section__title" data-title="Отзывы">Отзывы</h2>
               <nav class="section__navigation">
                 <button class="button swiper-button-prev" type="button">
                   <span class="visually-hidden">Предыдущий отзыв</span>
@@ -411,7 +446,7 @@
 
       <section class="section advantages">
         <div class="container">
-          <h2 class="section__title">Преимущества</h2>
+          <h2 class="section__title" data-title="Преимущества">Преимущества</h2>
           <div class="advantages__slider swiper">
             <div class="swiper-wrapper">
               <div class="advantages__slide swiper-slide">
@@ -452,7 +487,7 @@
         <div class="gallery__slider swiper">
           <div class="container">
             <header class="section__header">
-              <h2 class="section__title">Фотогалерея</h2>
+              <h2 class="section__title" data-title="Фотогалерея">Фотогалерея</h2>
               <p>Добавляйте фото с хэштегом #лайфтур,<bi> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
               <nav class="section__navigation">
                 <button class="button swiper-button-prev" type="button">
@@ -511,18 +546,18 @@
       <section class="section contacts" id="contacts">
         <div class="container">
           <div class="contacts__container">
-            <h2 class="section__title">Контакты</h2>
+            <h2 class="section__title" data-title="Контакты">Контакты</h2>
             <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
             <ul class="contacts__list">
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--phone">
                 <h3 class="contacts__title">Телефон</h3>
                 <a class="contacts__link" href="tel:+79837454545">+7 983 745-45-45</a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--mail">
                 <h3 class="contacts__title">Email</h3>
                 <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--address">
                 <h3 class="contacts__title">Адрес</h3>
                 <a class="contacts__link" href="#">г. Москва, пр-т Мира,<br> д. 14, офис 101</a>
               </li>
