@@ -3,8 +3,10 @@
   line-height: 1;
   font-weight: 600;
   color: $white;
+  white-space: nowrap;
+  transition: color 0.2s;
 
-  .page-footer & {
+  &--dark {
     display: none;
   }
 
@@ -15,9 +17,34 @@
   @include media("desktop") {
     font-size: 18px;
 
-    .page-footer & {
+    &--dark {
       display: block;
       color: $black;
     }
+  }
+
+  &:hover {
+    color: rgba($white, 0.5);
+  }
+  &--dark:hover {
+    color: rgba($blue, 0.1);
+  }
+
+  &:focus {
+    color: $black;
+    outline: none;
+  }
+  &--dark:focus {
+    color: $blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $dark-blue;
+  }
+
+  &.disabled {
+    color: $grey;
+    cursor: auto;
   }
 }

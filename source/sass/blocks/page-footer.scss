@@ -51,6 +51,7 @@
   padding: 7px;
 
   border: 1px solid rgba($black, 0.3);
+  transition: border-color 0.2s, background-color 0.2s;
 
   &::before {
     content: "";
@@ -64,8 +65,8 @@
     right: 0;
     margin: auto;
     background-color: $black;
-
     mask-repeat: no-repeat;
+    transition: background-color 0.2s;
   }
 
   &--vk::before {
@@ -83,10 +84,34 @@
     mask-size: 14px;
     mask-position: 7px center;
   }
-}
 
-.page-footer__phone {
-  white-space: nowrap;
+  &:hover {
+    border-color: $black;
+  }
+
+  &:focus {
+    border-color: $white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $blue;
+    border-color: $blue;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &.disabled {
+    background-color: $white;
+    border-color: rgba($black, 0.3);
+    cursor: not-allowed;
+
+    &::before {
+      background-color: rgba($black, 0.3);
+    }
+  }
 }
 
 .page-footer__policy {

@@ -10,6 +10,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $black;
+  transition: color 0.2s;
 
   @include media("tablet") {
     width: 230px;
@@ -34,5 +35,40 @@
     border-bottom: none;
 
     transform: rotate(45deg);
+    transition: border-color 0.2s;
+  }
+
+  &:hover {
+    color: rgba($blue, 0.1);
+
+    &::before {
+      border-color: rgba($blue, 0.1);
+    }
+  }
+
+  &:focus {
+    color: $blue;
+    outline: none;
+
+    &::before {
+      border-color: $blue;
+    }
+  }
+
+  &:active {
+    color: $dark-blue;
+
+    &::before {
+      border-color: $dark-blue;
+    }
+  }
+
+  &.disabled {
+  color: $grey;
+  cursor: not-allowed;
+
+    &::before {
+      border-color: $grey;
+    }
   }
 }

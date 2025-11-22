@@ -214,4 +214,29 @@ h2.section__title::before {
   &:last-child::before {
     mask-image: url("/__spritemap#sprite-arrow-right-view");
   }
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+
+    &::before {
+      background-color: $dark-blue;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
 }

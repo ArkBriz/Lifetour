@@ -2,10 +2,32 @@
   padding: 17px 15px;
   font-size: 16px;
   line-height: 1;
-  border: none;
+  border: 1px soldi rgba($blue, 0.1);
   border-radius: 2px;
 
   @include media("tablet") {
     padding: 20px 30px;
+  }
+
+  &::placeholder {
+    color: rgba($black, 0.5);
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    border-color: $black;
+    outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:disabled {
+    border-color: $grey;
   }
 }

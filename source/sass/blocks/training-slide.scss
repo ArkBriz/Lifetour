@@ -29,17 +29,48 @@
   width: 24px;
   height: 24px;
   border: 1px solid rgba($black, 0.3);
-}
+  transition: border-color 0.2s, background-color 0.2s;
 
-.training-slide__icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-color: $black;
-  mask-image: url("/__spritemap#sprite-vk-view");
-  mask-repeat: no-repeat;
-  mask-size: 14px 8px;
-  mask-position: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $black;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-repeat: no-repeat;
+    mask-size: 14px 8px;
+    mask-position: center;
+    transition: background-color 0.2s;
+  }
+
+  &:hover {
+    border-color: $black;
+  }
+
+  &:focus {
+    border-color: $white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $blue;
+    border-color: $blue;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &.disabled {
+    background-color: $white;
+    border-color: rgba($black, 0.3);
+    cursor: not-allowed;
+
+    &::before {
+      background-color: rgba($black, 0.3);
+    }
+  }
 }
 
 .training-slide p {

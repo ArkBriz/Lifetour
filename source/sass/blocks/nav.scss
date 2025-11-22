@@ -8,12 +8,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
     }
   }
 }
 
 .nav__link {
+  position: relative;
+  padding-inline: 5px;
   display: block;
   font-size: 14px;
   line-height: 14px;
@@ -54,4 +56,42 @@
       font-size: 16px;
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    bottom: 19%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+
+  &:focus {
+    outline: 1px solid currentColor;
+  }
+
+  &:active {
+    color: $dark-blue;
+    outline: none;
+  }
+  &:active::before {
+    transform: scale(0);
+  }
+
+  .page-footer__nav &:active {
+    color: $blue;
+  }
+
+  &.disabled {
+    color: $grey;
+  }
+
 }
