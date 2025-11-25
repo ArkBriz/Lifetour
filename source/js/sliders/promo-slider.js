@@ -3,7 +3,7 @@ import {Pagination} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const promoSlider = new Swiper('.hero__slider', {
+new Swiper('.hero__slider', {
   modules: [Pagination],
   loop: true,
   autoHeight: true,

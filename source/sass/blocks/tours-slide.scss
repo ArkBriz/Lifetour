@@ -1,6 +1,8 @@
 .tours-slide {
+  display: flex;
   width: 290px;
-  padding: 224px 20px 30px;
+  min-height: 416px;
+  padding: 0 20px 30px;
   font-size: 12px;
   line-height: 1;
   font-weight: 500;
@@ -38,8 +40,9 @@
 
 .tours-slide__container {
   display: grid;
-  grid-template-columns: 1fr 155px;
+  grid-template-columns: 1fr 180px;
   align-items: center;
+  margin-top: auto;
 }
 
 .tours-slide__title {
