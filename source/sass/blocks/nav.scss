@@ -4,6 +4,13 @@
   list-style-type: none;
 
   .page-header__nav & {
+    width: 290px;
+    margin: 0 auto;
+
+    @include media("tablet") {
+      width: 678px;
+    }
+
     @include media("desktop") {
       display: flex;
       flex-wrap: wrap;
@@ -93,5 +100,4 @@
   &.disabled {
     color: $grey;
   }
-
 }
