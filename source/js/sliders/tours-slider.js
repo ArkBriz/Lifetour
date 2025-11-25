@@ -1,7 +1,6 @@
 import Swiper from "swiper";
 import {Navigation} from "swiper/modules";
 import 'swiper/css';
-import 'swiper/css/pagination';
 
 new Swiper('.tours .swiper', {
   modules: [Navigation],
