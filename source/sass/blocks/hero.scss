@@ -5,6 +5,10 @@
 
   @include media("desktop") {
     text-align: left;
+
+    & .container {
+      position: relative;
+    }
   }
 }
 
@@ -140,3 +144,34 @@
   }
 }
 
+.hero__pagination {
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bottom: 40px;
+
+  & .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $white;
+    opacity: 1;
+
+    @include media("tablet") {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  & .swiper-pagination-bullet-active {
+    background-color: $white;
+  }
+
+  @include media("desktop") {
+    --swiper-pagination-bottom: 92px;
+
+    .hero__slider &.swiper-pagination {
+      width: auto;
+      left: auto;
+      right: 120px;
+    }
+  }
+}
