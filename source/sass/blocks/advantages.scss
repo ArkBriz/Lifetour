@@ -1,8 +1,14 @@
 .advantages {
   text-align: center;
+
+  @include media("desktop") {
+    & .container {
+      padding: 0;
+    }
+  }
 }
 
-.advantages__slider .swiper-wrapper {
+.advantages__slider.is-disabled .swiper-wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -16,30 +22,33 @@
 }
 
 .advantages__slide {
-  width: 290px;
-  padding: 82px 10px 20px;
-
   border: 1px solid rgba($blue, 0.1);
 
+  background-color: $white;
   background-repeat: no-repeat;
   background-size: 42px;
   background-position: center 20px;
 
-  &:nth-child(1) {
+  &--safety {
     background-image: url("/__spritemap#sprite-safety-view");
   }
-  &:nth-child(2) {
+  &--crown {
     background-image: url("/__spritemap#sprite-crown-view");
   }
-  &:nth-child(3) {
+  &--boots {
     background-image: url("/__spritemap#sprite-boots-view");
   }
-  &:nth-child(4) {
+  &--route {
     background-image: url("/__spritemap#sprite-route-view");
   }
-  &:nth-child(5) {
+  &--leaf {
     background-image: url("/__spritemap#sprite-leaf-view");
   }
+}
+
+.advantages__slide.swiper-slide {
+  width: 290px;
+  padding: 82px 10px 20px;
 
   @include media("tablet") {
     width: 324px;
@@ -62,12 +71,22 @@
   font-size: 14px;
   line-height: 1;
   font-weight: 600;
+
+  @include media("tablet") {
+    font-size: 16px;
+  }
+
+  @include media("desktop") {
+    font-size: 18px;
+  }
 }
 
 .advantages__slide p {
   margin: 0;
+  font-size: 12px;
+  line-height: 18px;
 
-  @include media("desktop") {
+  @include media("tablet") {
     font-size: 14px;
     line-height: 22px;
   }
