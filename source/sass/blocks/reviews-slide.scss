@@ -1,13 +1,14 @@
-.reviews-slide {
+.swiper-wrapper .reviews-slide {
   display: grid;
   gap: 20px;
   width: 290px;
   padding: 20px;
+  background-color: $white;
   box-shadow: 0 0 30px 0 rgba($blue, 0.1);
 
   @include media("tablet") {
-    width: 565px;
     grid-template-columns: 186px 1fr;
+    width: 565px;
     gap: 30px;
   }
 

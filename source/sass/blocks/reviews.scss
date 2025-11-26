@@ -1,0 +1,15 @@
+.reviews__slider.swiper {
+  @include media("tablet") {
+    margin-left: -45px;
+    margin-right: -45px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include media("desktop") {
+    margin-left: -130px;
+    margin-right: -130px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
