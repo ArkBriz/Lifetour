@@ -2,7 +2,7 @@
   padding: 17px 15px;
   font-size: 16px;
   line-height: 1;
-  border: 1px soldi rgba($blue, 0.1);
+  border: 1px solid rgba($blue, 0.1);
   border-radius: 2px;
 
   @include media("tablet") {
@@ -18,16 +18,18 @@
     border-color: $blue;
   }
 
-  &:focus {
+  &:focus,
+  &:focus:placeholder-shown {
     border-color: $black;
     outline: none;
-
-    &::placeholder {
-      color: transparent;
-    }
   }
 
   &:disabled {
     border-color: $grey;
+  }
+
+  &--error {
+    border-color: $error;
+    outline: none;
   }
 }
