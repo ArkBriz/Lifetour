@@ -1,3 +1,54 @@
+.gallery__slider .swiper-wrapper {
+  @include media("desktop") {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.gallery__slide.swiper-slide {
+  width: 158px;
+
+  @include media("tablet") {
+    width: 253px;
+  }
+
+  @include media("desktop") {
+    width: 284px;
+  }
+}
+
+.gallery__slide--double.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.gallery__slide:not(.gallery__slide--double) img {
+  height: 266px;
+  object-fit: cover;
+
+  @include media("tablet") {
+    height: 418px;
+  }
+
+  @include media("desktop") {
+    height: 463px;
+  }
+}
+
+.gallery__slide--double img {
+  height: 130px;
+  object-fit: cover;
+
+  @include media("tablet") {
+    height: 206px;
+  }
+
+  @include media("desktop") {
+    height: 228px;
+  }
+}
+
 .gallery__slider p {
   margin: 0;
 
