@@ -5,20 +5,38 @@
 }
 
 .about .container {
-  background-image: url("../../img/bg/about-bg-mobile.jpg");
+  background-image: url("../../img/bg/about-bg-mobile@1x.jpg");
+  background-image: image-set(
+    url("../../img/bg/about-bg-mobile@1x.webp") 1x,
+    url("../../img/bg/about-bg-mobile@2x.webp") 2x,
+    url("../../img/bg/about-bg-mobile@1x.jpg") 1x,
+    url("../../img/bg/about-bg-mobile@2x.jpg") 2x
+  );
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 20px;
 
   @include media("tablet") {
-    background-image: url("../../img/bg/about-bg-tablet.jpg");
+    background-image: url("../../img/bg/about-bg-tablet@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/about-bg-tablet@1x.webp") 1x,
+      url("../../img/bg/about-bg-tablet@2x.webp") 2x,
+      url("../../img/bg/about-bg-tablet@1x.jpg") 1x,
+      url("../../img/bg/about-bg-tablet@2x.jpg") 2x
+    );
     background-size: 545px;
     background-position: 0 115px;
   }
 
   @include media("desktop") {
     padding-bottom: 130px;
-    background-image: url("../../img/bg/about-bg-desktop.jpg");
+    background-image: url("../../img/bg/about-bg-desktop@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/about-bg-desktop@1x.webp") 1x,
+      url("../../img/bg/about-bg-desktop@2x.webp") 2x,
+      url("../../img/bg/about-bg-desktop@1x.jpg") 1x,
+      url("../../img/bg/about-bg-desktop@2x.jpg") 2x
+    );
     background-size: 720px;
     background-position: 0;
   }

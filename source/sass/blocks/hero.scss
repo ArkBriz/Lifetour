@@ -15,15 +15,33 @@
   background-repeat: no-repeat;
 
   &--bg-1 {
-    background-image: url("../../img/bg/caucasus-bg-mobile.jpg");
+    background-image: url("../../img/bg/caucasus-bg-mobile@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/caucasus-bg-mobile@1x.webp") 1x,
+      url("../../img/bg/caucasus-bg-mobile@2x.webp") 2x,
+      url("../../img/bg/caucasus-bg-mobile@1x.jpg") 1x,
+      url("../../img/bg/caucasus-bg-mobile@2x.jpg") 2x
+    );
   }
 
   &--bg-2 {
-    background-image: url("../../img/bg/kamchatka-bg-mobile.jpg");
+    background-image: url("../../img/bg/kamchatka-bg-mobile@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/kamchatka-bg-mobile@1x.webp") 1x,
+      url("../../img/bg/kamchatka-bg-mobile@2x.webp") 2x,
+      url("../../img/bg/kamchatka-bg-mobile@1x.jpg") 1x,
+      url("../../img/bg/kamchatka-bg-mobile@2x.jpg") 2x
+    );
   }
 
   &--bg-3 {
-    background-image: url("../../img/bg/altai-bg-mobile.jpg");
+    background-image: url("../../img/bg/altai-bg-mobile@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/altai-bg-mobile@1x.webp") 1x,
+      url("../../img/bg/altai-bg-mobile@2x.webp") 2x,
+      url("../../img/bg/altai-bg-mobile@1x.jpg") 1x,
+      url("../../img/bg/altai-bg-mobile@2x.jpg") 2x
+    );
   }
 
   @include media("tablet") {
@@ -31,15 +49,33 @@
     padding-bottom: 402px;
 
     &--bg-1 {
-      background-image: url("../../img/bg/caucasus-bg-tablet.jpg");
+      background-image: url("../../img/bg/caucasus-bg-tablet@1x.jpg");
+      background-image: image-set(
+        url("../../img/bg/caucasus-bg-tablet@1x.webp") 1x,
+        url("../../img/bg/caucasus-bg-tablet@2x.webp") 2x,
+        url("../../img/bg/caucasus-bg-tablet@1x.jpg") 1x,
+        url("../../img/bg/caucasus-bg-tablet@2x.jpg") 2x
+      );
     }
 
     &--bg-2 {
-      background-image: url("../../img/bg/kamchatka-bg-tablet.jpg");
+      background-image: url("../../img/bg/kamchatka-bg-tablet@1x.jpg");
+      background-image: image-set(
+        url("../../img/bg/kamchatka-bg-tablet@1x.webp") 1x,
+        url("../../img/bg/kamchatka-bg-tablet@2x.webp") 2x,
+        url("../../img/bg/kamchatka-bg-tablet@1x.jpg") 1x,
+        url("../../img/bg/kamchatka-bg-tablet@2x.jpg") 2x
+      );
     }
 
     &--bg-3 {
-      background-image: url("../../img/bg/altai-bg-tablet.jpg");
+      background-image: url("../../img/bg/altai-bg-tablet@1x.jpg");
+      background-image: image-set(
+        url("../../img/bg/altai-bg-tablet@1x.webp") 1x,
+        url("../../img/bg/altai-bg-tablet@2x.webp") 2x,
+        url("../../img/bg/altai-bg-tablet@1x.jpg") 1x,
+        url("../../img/bg/altai-bg-tablet@2x.jpg") 2x
+      );
     }
   }
 
@@ -48,15 +84,33 @@
     padding-bottom: 80px;
 
     &--bg-1 {
-      background-image: url("../../img/bg/caucasus-bg-desktop.jpg");
+      background-image: url("../../img/bg/caucasus-bg-desktop@1x.jpg");
+      background-image: image-set(
+        url("../../img/bg/caucasus-bg-desktop@1x.webp") 1x,
+        url("../../img/bg/caucasus-bg-desktop@2x.webp") 2x,
+        url("../../img/bg/caucasus-bg-desktop@1x.jpg") 1x,
+        url("../../img/bg/caucasus-bg-desktop@2x.jpg") 2x
+      );
     }
 
     &--bg-2 {
-      background-image: url("../../img/bg/kamchatka-bg-desktop.jpg");
+      background-image: url("../../img/bg/kamchatka-bg-desktop@1x.jpg");
+      background-image: image-set(
+        url("../../img/bg/kamchatka-bg-desktop@1x.webp") 1x,
+        url("../../img/bg/kamchatka-bg-desktop@2x.webp") 2x,
+        url("../../img/bg/kamchatka-bg-desktop@1x.jpg") 1x,
+        url("../../img/bg/kamchatka-bg-desktop@2x.jpg") 2x
+      );
     }
 
     &--bg-3 {
-      background-image: url("../../img/bg/altai-bg-desktop.jpg");
+      background-image: url("../../img/bg/altai-bg-desktop@1x.jpg");
+      background-image: image-set(
+        url("../../img/bg/altai-bg-desktop@1x.webp") 1x,
+        url("../../img/bg/altai-bg-desktop@2x.webp") 2x,
+        url("../../img/bg/altai-bg-desktop@1x.jpg") 1x,
+        url("../../img/bg/altai-bg-desktop@2x.jpg") 2x
+      );
     }
   }
 }

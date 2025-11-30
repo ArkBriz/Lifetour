@@ -13,19 +13,43 @@
   background-position: center 0;
 
   &--bg-1 {
-    background-image: url("../../img/bg/tours-elbrus.jpg");
+    background-image: url("../../img/bg/tours-elbrus@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/tours-elbrus@1x.webp") 1x,
+      url("../../img/bg/tours-elbrus@2x.webp") 2x,
+      url("../../img/bg/tours-elbrus@1x.jpg") 1x,
+      url("../../img/bg/tours-elbrus@2x.jpg") 2x
+    );
   }
 
   &--bg-2 {
-    background-image: url("../../img/bg/tours-belukha.jpg");
+    background-image: url("../../img/bg/tours-belukha@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/tours-belukha@1x.webp") 1x,
+      url("../../img/bg/tours-belukha@2x.webp") 2x,
+      url("../../img/bg/tours-belukha@1x.jpg") 1x,
+      url("../../img/bg/tours-belukha@2x.jpg") 2x
+    );
   }
 
   &--bg-3 {
-    background-image: url("../../img/bg/tours-fisht.jpg");
+    background-image: url("../../img/bg/tours-fisht@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/tours-fisht@1x.webp") 1x,
+      url("../../img/bg/tours-fisht@2x.webp") 2x,
+      url("../../img/bg/tours-fisht@1x.jpg") 1x,
+      url("../../img/bg/tours-fisht@2x.jpg") 2x
+    );
   }
 
   &--bg-4 {
-    background-image: url("../../img/bg/tours-manaraga.jpg");
+    background-image: url("../../img/bg/tours-manaraga@1x.jpg");
+    background-image: image-set(
+      url("../../img/bg/tours-manaraga@1x.webp") 1x,
+      url("../../img/bg/tours-manaraga@2x.webp") 2x,
+      url("../../img/bg/tours-manaraga@1x.jpg") 1x,
+      url("../../img/bg/tours-manaraga@2x.jpg") 2x
+    );
   }
 
   @include media("tablet") {

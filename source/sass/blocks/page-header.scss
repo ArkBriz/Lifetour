@@ -30,6 +30,8 @@
 .page-header__nav {
   position: absolute;
   width: 100%;
+  padding-block: 30px 50px;
+  top: 105px;
   left: 0;
   background-color: $blue;
   z-index: 10;
