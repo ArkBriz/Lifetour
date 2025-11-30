@@ -22,17 +22,15 @@
 
 .nav__link {
   position: relative;
-  padding-inline: 5px;
-  display: block;
+  display: inline-block;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
-  letter-spacing: 4%;
   text-transform: uppercase;
   color: $white;
 
   .page-header__nav & {
-    padding-block: 11px;
+    padding: 11px 5px;
   }
 
   .page-footer__nav & {
@@ -57,7 +55,6 @@
   @include media("desktop") {
     font-weight: 400;
     text-transform: none;
-    letter-spacing: normal;
 
     .page-footer__nav & {
       font-size: 16px;
@@ -97,7 +94,13 @@
     color: $blue;
   }
 
-  &.disabled {
+  &.disabled,
+  &.disabled:hover {
     color: $grey;
+    cursor: not-allowed;
+  }
+
+  &.disabled:hover::before {
+    transform: scaleX(0);
   }
 }

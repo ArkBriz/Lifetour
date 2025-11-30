@@ -7,6 +7,7 @@ new Swiper('.hero__slider', {
   modules: [Pagination],
   loop: true,
   autoHeight: true,
+  speed: 1000,
 
   pagination: {
     el: '.hero__pagination',

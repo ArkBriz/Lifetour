@@ -6,6 +6,7 @@ new Swiper('.tours .swiper', {
   modules: [Navigation],
   spaceBetween: 15,
   autoHeight: true,
+  speed: 700,
 
   navigation: {
     nextEl: '.tours .swiper-button-next',

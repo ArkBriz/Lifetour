@@ -1,32 +1,37 @@
-.about {
-  padding-top: 420px;
+.about.section {
+  @include media("desktop") {
+    padding-bottom: 0;
+  }
+}
+
+.about .container {
   background-image: url("../../img/bg/about-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 20px;
 
   @include media("tablet") {
-    padding-top: 0;
     background-image: url("../../img/bg/about-bg-tablet.jpg");
     background-size: 545px;
     background-position: 0 115px;
   }
 
   @include media("desktop") {
-    padding-top: 100px;
+    padding-bottom: 130px;
     background-image: url("../../img/bg/about-bg-desktop.jpg");
-    background-size: contain;
-    background-position: 0 15px;
+    background-size: 720px;
+    background-position: 0;
   }
-
 }
 
 .about__container {
   width: 290px;
+  padding-top: 420px;
 
   @include media("tablet") {
     width: 270px;
     margin-left: auto;
+    padding-top: 0;
   }
 
   @include media("desktop") {

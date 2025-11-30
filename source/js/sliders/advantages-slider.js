@@ -63,7 +63,7 @@ const enableSwiper = () => {
       slidesPerView: 'auto',
       slidesPerGroup: 2,
       spaceBetween: 30,
-      speed: 1000,
+      speed: 1500,
       allowTouchMove: false,
       centeredSlides: true,
       initialSlide: 2,

@@ -1,6 +1,19 @@
 .page-footer {
-  padding-block: 23px 20px;
+  padding-block: 0 20px;
   text-align: center;
+}
+
+.page-footer > .container {
+  padding-top: 23px;
+  border-top: 1px solid rgba($black, 0.2);
+
+  @include media("tablet") {
+    padding-top: 34px;
+  }
+
+  @include media("desktop") {
+    padding-top: 32px;
+  }
 }
 
 .page-footer__container {
@@ -103,7 +116,8 @@
     }
   }
 
-  &.disabled {
+  &.disabled,
+  &.disabled:hover {
     background-color: $white;
     border-color: rgba($black, 0.3);
     cursor: not-allowed;

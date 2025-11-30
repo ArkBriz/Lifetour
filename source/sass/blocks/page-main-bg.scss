@@ -1,0 +1,44 @@
+.page-main {
+  background-image: url("../../img/bg/clouds-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 346px;
+  background-position: top 463px right -205px;
+
+  @include media("tablet") {
+    background-size: 600px;
+    background-position: top 920px right -178px;
+  }
+
+  @include media("desktop") {
+    background-position: top 590px right 0;
+  }
+}
+
+.page-main .training {
+  background-repeat: no-repeat;
+
+  @include media("tablet") {
+    background-image: url("../../img/bg/clouds-2.jpg");
+    background-size: 750px;
+    background-position: right -270px bottom 110px;
+  }
+
+  @include media("desktop") {
+    background-position: right -70px bottom -60px;
+  }
+}
+
+.page-main__container {
+  @include media("tablet") {
+    background-repeat: no-repeat;
+    background-image: url("../../img/bg/clouds-4.jpg");
+    background-size: 768px;
+    background-position: 0 565px;
+  }
+
+  @include media("desktop") {
+    background-image: url("../../img/bg/clouds-3.jpg");
+    background-size: 1460px;
+    background-position: -30px 270px;
+  }
+}

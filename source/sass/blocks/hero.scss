@@ -5,10 +5,6 @@
 
   @include media("desktop") {
     text-align: left;
-
-    & .container {
-      position: relative;
-    }
   }
 }
 
@@ -176,8 +172,8 @@
 
     .hero__slider &.swiper-pagination {
       width: auto;
-      left: auto;
-      right: 120px;
+      left: 50%;
+      transform: translateX(calc(600px - 100%));
     }
   }
 }

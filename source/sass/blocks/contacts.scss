@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  text-align: left;
 }
 
 .contacts__container {
@@ -117,7 +118,8 @@
   @include media("desktop") {
     position: absolute;
     top: 149px;
-    right: 120px;
+    left: 50%;
+    transform: translateX(calc(600px - 100%));
     width: 600px;
   }
 }

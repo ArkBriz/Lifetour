@@ -6,6 +6,7 @@ new Swiper('.reviews__slider', {
   modules: [Navigation],
 
   spaceBetween: 15,
+  speed: 1000,
 
   navigation: {
     nextEl: '.reviews__slider .swiper-button-next',

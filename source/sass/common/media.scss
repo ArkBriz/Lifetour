@@ -10,10 +10,4 @@
       @content;
     }
   }
-
-  @else if $breakpoint == "mobile" {
-    @media (max-width: $mobile-width-max) {
-      @content;
-    }
-  }
 }

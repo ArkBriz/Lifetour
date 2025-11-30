@@ -6,6 +6,7 @@ new Swiper('.training__slider', {
   modules: [Navigation],
 
   spaceBetween: 15,
+  speed: 700,
 
   navigation: {
     nextEl: '.training__slider .swiper-button-next',

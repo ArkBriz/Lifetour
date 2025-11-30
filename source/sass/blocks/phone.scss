@@ -43,7 +43,8 @@
     color: $dark-blue;
   }
 
-  &.disabled {
+  &.disabled,
+  &.disabled:hover {
     color: $grey;
     cursor: auto;
   }

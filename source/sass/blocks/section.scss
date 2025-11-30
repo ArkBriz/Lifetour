@@ -58,6 +58,7 @@
 
     @include media("desktop") {
       margin-bottom: 38px;
+      padding-top: 30px;
     }
   }
 
@@ -156,6 +157,23 @@ h2.section__title,
 
     @include media("desktop") {
       font-size: 55px;
+    }
+  }
+}
+
+.about__container h2,
+.reviews .section__title {
+  &::before {
+    @include media("desktop") {
+      top: -40px;
+    }
+  }
+}
+
+.advantages .section__title {
+  &::before {
+    @include media("desktop") {
+      top: -30px;
     }
   }
 }

@@ -63,7 +63,8 @@
     }
   }
 
-  &.disabled {
+  &.disabled,
+  &.disabled:hover {
     background-color: $white;
     border-color: rgba($black, 0.3);
     cursor: not-allowed;

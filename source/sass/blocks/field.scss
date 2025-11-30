@@ -24,7 +24,8 @@
     outline: none;
   }
 
-  &:disabled {
+  &:disabled,
+  &:disabled:hover {
     border-color: $grey;
   }
 
