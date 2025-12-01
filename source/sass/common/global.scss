@@ -67,17 +67,19 @@ html {
 }
 
 .container {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 
   @include media("tablet") {
-    width: 768px;
+    max-width: 768px;
     padding: 0 45px;
   }
 
   @include media("desktop") {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 120px;
   }
 }

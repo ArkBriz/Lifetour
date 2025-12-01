@@ -115,11 +115,14 @@
 }
 
 .contacts__map {
+  img {
+    width: 100%;
+  }
+
   @include media("desktop") {
     position: absolute;
     top: 149px;
     left: 50%;
-    transform: translateX(calc(600px - 100%));
     width: 600px;
   }
 }
