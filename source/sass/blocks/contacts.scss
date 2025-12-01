@@ -44,6 +44,7 @@
 
   @include media("tablet") {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 39px;
 
     & br {

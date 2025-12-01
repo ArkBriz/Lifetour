@@ -89,6 +89,8 @@
 
   @include media("desktop") {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     max-width: 960px;
   }

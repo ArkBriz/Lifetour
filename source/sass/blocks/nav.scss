@@ -4,18 +4,23 @@
   list-style-type: none;
 
   .page-header__nav & {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 290px;
+    max-height: 450px;
     margin: 0 auto;
 
     @include media("tablet") {
       width: 678px;
+      max-height: 500px;
     }
 
     @include media("desktop") {
-      display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
       justify-content: center;
       gap: 20px;
+      max-height: none;
     }
   }
 }

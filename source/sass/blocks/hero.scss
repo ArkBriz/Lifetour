@@ -114,6 +114,12 @@
       );
     }
   }
+
+  & .button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .hero__text-content {
@@ -169,6 +175,8 @@
 
   @include media("desktop") {
     display: flex;
+    max-width: 1050px;
+    flex-wrap: wrap;
     margin-top: 134px;
     gap: 10px;
 
@@ -187,11 +195,11 @@
 
   border: 1px solid $white;
 
-  &:first-child {
+  &--duration {
     background-image: url("/__spritemap#sprite-moon-view");
   }
 
-  &:last-child {
+  &--difficulty {
     background-image: url("/__spritemap#sprite-level-view");
   }
 }

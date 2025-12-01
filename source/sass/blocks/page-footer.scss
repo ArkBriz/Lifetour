@@ -18,10 +18,15 @@
 
 .page-footer__container {
   @include media("tablet") {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+  }
+
+  @include media("desktop") {
+    grid-template-columns: 1fr 800px 1fr;
   }
 }
 
@@ -35,6 +40,10 @@
     justify-content: center;
     gap: 20px;
   }
+}
+
+.page-footer .phone {
+  grid-column: 3 / 4;
 }
 
 .page-footer__socials {

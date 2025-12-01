@@ -119,6 +119,6 @@
   justify-self: end;
 
   @include media("tablet") {
-    grid-column: auto;
+    grid-column: 3 / 4;
   }
 }
