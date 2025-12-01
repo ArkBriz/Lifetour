@@ -55,7 +55,7 @@
   font-weight: 700;
 
   @include media("tablet") {
-    margin-bottom: 104px;
+    margin-bottom: 100px;
     font-size: 18px;
   }
 
@@ -86,8 +86,8 @@
   @include media("tablet") {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 174px;
-    row-gap: 104px;
+    column-gap: 164px;
+    row-gap: 101px;
     padding-left: 0;
     font-size: 14px;
     line-height: 22px;
@@ -163,6 +163,11 @@
   }
 
   @include media("tablet") {
+    width: 242px;
+    padding-left: 35px;
+
+    background-position: 0 2px;
+
     &:nth-child(2) {
       order: 1;
     }
@@ -180,6 +185,7 @@
   @include media("desktop") {
     width: 253px;
     padding-bottom: 35px;
+    background-position: 10px 2px;
 
     &:nth-child(2) {
       order: 0;

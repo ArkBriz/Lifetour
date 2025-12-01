@@ -8,7 +8,8 @@
   border-top: 1px solid rgba($black, 0.2);
 
   @include media("tablet") {
-    padding-top: 34px;
+    padding-top: 32px;
+    padding-inline: 33px;
   }
 
   @include media("desktop") {
@@ -26,6 +27,9 @@
     gap: 30px;
   }
 
+  @include media("tablet") {
+    gap: 37px;
+  }
   @include media("desktop") {
     grid-template-columns: 1fr 800px 1fr;
   }
@@ -43,7 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
   }
 
   @include media("desktop") {
@@ -67,7 +71,8 @@
   list-style-type: none;
 
   @include media("tablet") {
-    margin-block: 34px;
+    margin-top: 30px;
+    margin-bottom: 27px;
   }
 
   @include media("desktop") {
@@ -150,11 +155,14 @@
 }
 
 .page-footer__policy {
-  margin-right: 36px;
   font-size: 12px;
   line-height: 1;
   font-weight: 300;
   color: $black;
+
+  @include media("desktop") {
+    margin-right: 36px;
+  }
 
   &:hover {
     color: rgba($black, 0.5);

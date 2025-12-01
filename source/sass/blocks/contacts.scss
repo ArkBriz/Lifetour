@@ -24,12 +24,14 @@
   line-height: 20px;
 
   @include media("tablet") {
+    max-width: 500px;
     margin-bottom: 40px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @include media("desktop") {
+    max-width: 100%;
     margin-bottom: 50px;
   }
 }
@@ -62,7 +64,7 @@
   padding-left: 34px;
   background-repeat: no-repeat;
   background-size: 22px;
-  background-position: 0 11px;
+  background-position: 0 0;
 
   &--phone {
     background-image: url("/__spritemap#sprite-phone-view");
@@ -81,6 +83,7 @@
   @include media("desktop") {
     padding-left: 56px;
     background-size: 26px;
+    background-position: 0 11px;
   }
 }
 

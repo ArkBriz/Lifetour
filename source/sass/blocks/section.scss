@@ -2,6 +2,11 @@
   padding-block: 20px;
 
   &.about {
+    @include media("tablet") {
+      padding-top: 64px;
+      padding-bottom: 37px;
+    }
+
     @include media("desktop") {
       padding-top: 75px;
       padding-bottom: 54px;
@@ -19,7 +24,16 @@
   }
 
   @include media("tablet") {
-    padding-block: 40px;
+    padding-top: 52px;
+    padding-bottom: 35px;
+
+    &.gallery {
+      padding-top: 59px;
+    }
+
+    &.contacts {
+      padding-bottom: 39px;
+    }
   }
 
   @include media("desktop") {
@@ -130,6 +144,10 @@
 
     .advantages &  {
       margin-bottom: 60px;
+    }
+
+    .gallery & {
+      margin-bottom: 29px;
     }
 
     .contacts & {

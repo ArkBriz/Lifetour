@@ -47,7 +47,7 @@
 
   @include media("tablet") {
     padding-top: 342px;
-    padding-bottom: 402px;
+    padding-bottom: 392px;
 
     &--bg-1 {
       background-image: url("../../img/bg/caucasus-bg-tablet@1x.jpg");
@@ -116,7 +116,6 @@
   }
 
   & .button {
-    display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
   }
@@ -158,6 +157,10 @@
     margin: 0 auto;
     font-size: 17px;
     line-height: 24px;
+
+    br {
+      display: none;
+    }
   }
 
   @include media("desktop") {
@@ -167,7 +170,9 @@
 
 .hero__slide .button {
   min-width: 180px;
-  max-width: 280px;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .hero__container {
@@ -229,6 +234,10 @@
   & .swiper-pagination-bullet-active,
   & .swiper-pagination-bullet-active:hover {
     background-color: $white;
+  }
+
+  @include media("tablet") {
+    --swiper-pagination-bottom: 34px;
   }
 
   @include media("desktop") {

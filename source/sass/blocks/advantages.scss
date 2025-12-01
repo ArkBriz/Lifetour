@@ -19,7 +19,8 @@
   @include media("tablet") {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 28px;
     justify-content: center;
   }
 }
@@ -55,9 +56,9 @@
 
   @include media("tablet") {
     width: 324px;
-    padding: 103px 20px 30px;
+    padding: 103px 19px 30px;
     background-size: 48px;
-    background-position: center 25px;
+    background-position: center 30px;
   }
 
   @include media("desktop") {

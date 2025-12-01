@@ -4,7 +4,8 @@
   background-color: $blue;
 
   @include media("tablet") {
-    padding-block: 20px;
+    padding-top: 20px;
+    padding-bottom: 14px;
   }
 
   @include media("desktop") {
@@ -19,7 +20,7 @@
   align-items: center;
 
   @include media("tablet") {
-    grid-template-columns: 1fr 142px 1fr;
+    grid-template-columns: 1fr 206px 1fr;
   }
 
   @include media("desktop") {
@@ -76,7 +77,7 @@
     content: "";
     position: absolute;
     display: block;
-    height: 2.5px;
+    height: 2px;
     left: 0;
     background-color: $white;
     transition: all 0.2s ease-in-out;
@@ -84,13 +85,13 @@
 
   &::before {
     width: 26px;
-    top: 2px;
-    box-shadow: 0 19px 0 $white;
+    top: 0;
+    box-shadow: 0 17px 0 $white;
   }
 
   &::after {
     width: 18px;
-    top: 12px;
+    top: 9px;
   }
 
   &--open::before,
