@@ -31,7 +31,7 @@
   position: absolute;
   width: 100%;
   padding-block: 30px 50px;
-  top: 105px;
+  top: 100%;
   left: 0;
   background-color: $blue;
   z-index: 10;
@@ -45,12 +45,10 @@
   }
 
   @include media("mobile") {
-    top: 105px;
     padding: 0 15px 35px;
   }
 
   @include media("tablet") {
-    top: 88px;
     padding: 17px 45px 70px;
   }
 

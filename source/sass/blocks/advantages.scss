@@ -1,9 +1,12 @@
 .advantages {
   text-align: center;
 
-  @include media("desktop") {
-    & .container {
+  & .container {
+    padding-top: 12px;
+
+    @include media("desktop") {
       padding: 0;
+      padding-top: 23px;
     }
   }
 }

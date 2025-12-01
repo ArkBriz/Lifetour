@@ -14,9 +14,12 @@
 }
 
 .gallery__slider .swiper-wrapper {
+  max-width: 100%;
+
   @include media("desktop") {
     display: flex;
     gap: 5px;
+    max-width: 100%;
   }
 }
 

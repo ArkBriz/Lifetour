@@ -133,4 +133,8 @@
   line-height: 1;
   font-weight: 300;
   color: $black;
+
+  &:hover {
+    color: rgba($black, 0.5);
+  }
 }

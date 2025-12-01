@@ -11,6 +11,7 @@
 .hero__slide {
   min-height: 568px;
   padding-top: 121px;
+  padding-bottom: 90px;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -177,6 +178,7 @@
 }
 
 .hero__details {
+  max-width: 520px;
   padding: 14px 20px 14px 40px;
 
   background-repeat: no-repeat;

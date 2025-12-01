@@ -21,6 +21,7 @@
 .section__header {
   .tours & {
     margin-bottom: 42px;
+    padding-top: 8px;
 
     @include media("tablet") {
       display: flex;
@@ -49,6 +50,7 @@
 
   .reviews & {
     margin-bottom: 32px;
+    padding-top: 12px;
 
     @include media("tablet") {
       display: flex;
@@ -64,6 +66,7 @@
 
   .gallery & {
     margin-bottom: 31px;
+    padding-top: 13px;
 
     @include media("tablet") {
       display: grid;

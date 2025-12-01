@@ -10,6 +10,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $black;
+  text-align: center;
   transition: color 0.2s;
 
   @include media("tablet") {

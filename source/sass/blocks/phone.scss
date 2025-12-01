@@ -1,9 +1,9 @@
 .phone {
+  max-width: 160px;
   font-size: 14px;
   line-height: 1;
   font-weight: 600;
   color: $white;
-  white-space: nowrap;
   transition: color 0.2s;
 
   &--dark {

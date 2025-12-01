@@ -3,7 +3,7 @@ import {Pagination} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-new Swiper('.hero__slider', {
+const heroSlider = new Swiper('.hero__slider', {
   modules: [Pagination],
   loop: true,
   autoHeight: true,
@@ -23,3 +23,21 @@ new Swiper('.hero__slider', {
     },
   },
 });
+
+// Ensure Swiper recalculates height after fonts load or full page load
+const updateHeroAutoHeight = () => {
+  try {
+    if (heroSlider && typeof heroSlider.updateAutoHeight === 'function') {
+      heroSlider.updateAutoHeight();
+    }
+  } catch (e) {
+    // ignore
+  }
+};
+
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(updateHeroAutoHeight).catch(() => {});
+}
+
+window.addEventListener('load', updateHeroAutoHeight);
+window.addEventListener('resize', updateHeroAutoHeight);
