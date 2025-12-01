@@ -1,8 +1,8 @@
-.swiper-wrapper .reviews-slide {
+.reviews .reviews-slide {
   display: grid;
   gap: 20px;
   width: 290px;
-  padding: 20px;
+  padding: 19px 30px;
   background-color: $white;
   box-shadow: 0 0 30px 0 rgba($blue, 0.1);
 
@@ -56,7 +56,7 @@
     line-height: 22px;
 
     &:last-of-type {
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
   }
 }
@@ -75,11 +75,12 @@
   }
 
   @include media("desktop") {
-    margin-bottom: 8px;
+    margin-bottom: 1px;
   }
 }
 
 .reviews-slide span {
+  font-size: 12px;
   line-height: 1;
   font-weight: 300;
 }

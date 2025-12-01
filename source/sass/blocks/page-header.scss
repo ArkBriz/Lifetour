@@ -8,7 +8,7 @@
   }
 
   @include media("desktop") {
-    padding-block: 32px;
+    padding-block: 38px;
   }
 }
 
@@ -23,7 +23,7 @@
   }
 
   @include media("desktop") {
-    grid-template-columns: 1fr 820px 1fr;
+    grid-template-columns: 1fr 805px 1fr;
   }
 }
 
@@ -112,6 +112,10 @@
   @include media("desktop") {
     display: none;
   }
+}
+
+.page-header__logo {
+ padding-inline: 32px;
 }
 
 .page-header__phone {

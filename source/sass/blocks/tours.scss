@@ -11,10 +11,11 @@
   text-transform: uppercase;
   color: $black;
   text-align: center;
+  letter-spacing: 0.6px;
   transition: color 0.2s;
 
   @include media("tablet") {
-    width: 230px;
+    width: 240px;
     font-size: 16px;
   }
 

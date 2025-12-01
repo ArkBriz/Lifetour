@@ -177,7 +177,7 @@
     display: flex;
     max-width: 1050px;
     flex-wrap: wrap;
-    margin-top: 134px;
+    margin-top: 123px;
     gap: 10px;
 
     font-size: 12px;
@@ -232,12 +232,12 @@
   }
 
   @include media("desktop") {
-    --swiper-pagination-bottom: 92px;
+    --swiper-pagination-bottom: 85px;
 
     .hero__slider &.swiper-pagination {
       width: auto;
       left: 50%;
-      transform: translateX(calc(600px - 100%));
+      transform: translateX(calc(610px - 100%));
     }
   }
 }

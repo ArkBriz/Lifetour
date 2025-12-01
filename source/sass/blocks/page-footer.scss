@@ -12,7 +12,8 @@
   }
 
   @include media("desktop") {
-    padding-top: 32px;
+    padding-top: 38px;
+    padding-right: 84px;
   }
 }
 
@@ -30,6 +31,10 @@
   }
 }
 
+.page-footer__logo {
+  padding-left: 12px;
+}
+
 .page-footer__nav .nav__list {
   column-count: 2;
   column-gap: 50px;
@@ -39,6 +44,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+
+  @include media("desktop") {
+    margin-right: 37px;
+    gap: 30px;
   }
 }
 
@@ -61,7 +71,9 @@
   }
 
   @include media("desktop") {
-    margin-block: 22px;
+    margin-top: 25px;
+    margin-right: 38px;
+    margin-bottom: 15px;
   }
 }
 
@@ -138,6 +150,7 @@
 }
 
 .page-footer__policy {
+  margin-right: 36px;
   font-size: 12px;
   line-height: 1;
   font-weight: 300;

@@ -1,6 +1,6 @@
 .training.section {
   @include media("desktop") {
-    padding-block: 40px;
+    padding-block: 50px;
   }
 }
 
@@ -38,7 +38,7 @@
 
   @include media("desktop") {
     width: 820px;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
 
     & br {
       display: none;
@@ -60,7 +60,7 @@
   }
 
   @include media("desktop") {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     font-size: 21px;
   }
 }
@@ -108,11 +108,11 @@
 .training__process-item {
   position: relative;
   width: 235px;
-  padding-left: 34px;
+  padding-left: 45px;
   padding-bottom: 3px;
   background-repeat: no-repeat;
   background-size: 25px;
-  background-position: 0 0;
+  background-position: 10px 2px;
 
   &--map {
     background-image: url("/__spritemap#sprite-map-view");
@@ -192,15 +192,15 @@
     &::before {
       display: block;
       top: auto;
-      bottom: 10px;
-      left: 10px;
+      bottom: 12px;
+      left: 20px;
     }
 
     &::after {
       display: block;
-      width: 160%;
+      width: 166%;
       height: 2px;
-      bottom: 23px;
+      bottom: 25px;
       left: 20px;
       top: auto;
     }
