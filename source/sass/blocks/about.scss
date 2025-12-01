@@ -1,9 +1,3 @@
-.about.section {
-  @include media("desktop") {
-    padding-bottom: 0;
-  }
-}
-
 .about .container {
   background-image: url("../../img/bg/about-bg-mobile@1x.jpg");
   background-image: image-set(

@@ -8,7 +8,7 @@
   </head>
 
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="container">
         <!-- Add modifier open to button when menu is open -->
         <button class="page-header__toggler" type="button" aria-controls="nav" aria-expanded="false">
@@ -50,7 +50,7 @@
     <main class="page-main main-container">
       <h1 class="visually-hidden">Сайт Lifetour</h1>
 
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Популярные предложения</h2>
 
         <div class="hero__slider swiper">
@@ -105,7 +105,7 @@
         </div>
       </section>
 
-      <section class="section tours" id="tours">
+      <section class="section tours" id="tours" data-test="tours">
         <div class="container">
           <div class="swiper">
             <header class="section__header">
@@ -270,7 +270,7 @@
         </div>
       </section>
 
-      <section class="section training" id="training">
+      <section class="section training" id="training" data-test="training">
         <div class="container">
           <h2 class="section__title" data-title="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
@@ -375,7 +375,7 @@
         </div>
       </section>
 
-      <section class="section about" id="about">
+      <section class="section about" id="about" data-test="about">
         <div class="container">
           <div class="about__container">
             <h2>О нас</h2>
@@ -398,7 +398,7 @@
       </section>
 
       <div class="page-main__container">
-        <section class="section reviews" id="reviews">
+        <section class="section reviews" id="reviews" data-test="reviews">
           <div class="container">
             <div class="reviews__slider swiper">
               <header class="section__header">
@@ -470,7 +470,7 @@
           </div>
         </section>
 
-        <section class="section advantages">
+        <section class="section advantages" data-test="adv">
           <div class="container">
             <h2 class="section__title" data-title="Преимущества">Преимущества</h2>
             <div class="advantages__slider swiper">
@@ -510,7 +510,7 @@
         </section>
       </div>
 
-      <section class="section gallery" id="gallery">
+      <section class="section gallery" id="gallery" data-test="gallery">
         <div class="gallery__slider swiper">
           <div class="container">
             <header class="section__header">
@@ -570,7 +570,7 @@
         </div>
       </section>
 
-      <section class="callback">
+      <section class="callback" data-test="form">
         <div class="callback__container">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
@@ -588,7 +588,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="section contacts" id="contacts">
         <div class="container">
           <div class="contacts__container">
@@ -676,19 +676,6 @@
         <a class="page-footer__policy" href="#">Политика конфиденциальности</a>
       </div>
     </footer>
-
-    <!-- примеры требуемых атрибутов data-test="*"
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>  -->
-
 
     <script type="module" src="js/main.js"></script>
   </body>
