@@ -14,7 +14,8 @@
 
   @include media("desktop") {
     padding-top: 38px;
-    padding-right: 84px;
+    padding-right: 113px;
+    padding-left: 137px;
   }
 }
 
@@ -28,10 +29,12 @@
   }
 
   @include media("tablet") {
-    gap: 37px;
+    gap: 25px;
   }
+
   @include media("desktop") {
     grid-template-columns: 1fr 800px 1fr;
+    gap: 36px;
   }
 }
 
@@ -42,6 +45,10 @@
   @include media("tablet") {
     padding-left: 12px;
     padding-bottom: 0;
+  }
+
+  @include media("desktop") {
+    margin-right: 10px;
   }
 }
 
@@ -84,7 +91,7 @@
 
   @include media("desktop") {
     margin-top: 25px;
-    margin-right: 38px;
+    margin-right: 25px;
     margin-bottom: 15px;
   }
 }

@@ -9,7 +9,7 @@
   }
 
   @include media("desktop") {
-    padding-block: 38px;
+    padding-block: 37px;
   }
 }
 
@@ -133,6 +133,10 @@
 .page-header__logo {
   @include media("tablet") {
     padding-inline: 32px;
+  }
+
+  @include media("desktop") {
+    padding-top: 3px;
   }
 }
 

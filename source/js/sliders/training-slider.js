@@ -26,6 +26,8 @@ new Swiper('.training__slider', {
 
     1440: {
       slidesPerView: 4,
+      centeredSlides: false,
+      initialSlide: 0,
     }
   },
 });

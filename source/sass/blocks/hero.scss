@@ -164,6 +164,10 @@
 
   @include media("desktop") {
     margin: 0;
+
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -172,6 +176,10 @@
   width: max-content;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  @include media("desktop") {
+    margin: 0;
+  }
 }
 
 .hero__container {
@@ -181,7 +189,7 @@
     display: flex;
     max-width: 1050px;
     flex-wrap: wrap;
-    margin-top: 123px;
+    margin-top: 132px;
     gap: 10px;
 
     font-size: 12px;
