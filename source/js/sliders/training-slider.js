@@ -7,6 +7,8 @@ new Swiper('.training__slider', {
 
   spaceBetween: 15,
   speed: 700,
+  centeredSlides: true,
+  initialSlide: 2,
 
   navigation: {
     nextEl: '.training__slider .swiper-button-next',
@@ -18,6 +20,8 @@ new Swiper('.training__slider', {
       slidesPerView: 3,
       spaceBetween: 20,
       allowTouchMove: false,
+      centeredSlides: false,
+      initialSlide: 0,
     },
 
     1440: {

@@ -72,13 +72,15 @@
 
 .reviews-slide cite {
   display: block;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 1;
   font-weight: 700;
   font-style: normal;
 
   @include media("tablet") {
+    margin-top: 0;
     margin-bottom: 2px;
     font-size: 13px;
   }

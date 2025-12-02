@@ -8,7 +8,7 @@
   );
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 20px;
+  background-position: 0 -6px;
 
   @include media("tablet") {
     background-image: url("../../img/bg/about-bg-tablet@1x.jpg");
@@ -38,7 +38,7 @@
 
 .about__container {
   width: 290px;
-  padding-top: 420px;
+  padding-top: 410px;
 
   @include media("tablet") {
     width: 270px;
@@ -119,5 +119,9 @@
 }
 
 .about__item:not(:last-child) p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @include media("tablet") {
+    margin-bottom: 30px;
+  }
 }

@@ -18,7 +18,7 @@
 
 .training p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 
   font-size: 14px;
   line-height: 20px;
@@ -48,7 +48,7 @@
 
 .training__process-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   font-size: 16px;
   line-height: 1;
@@ -69,7 +69,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 22px;
   margin: 0;
   padding: 0;
   padding-left: 29px;
@@ -108,11 +108,11 @@
 .training__process-item {
   position: relative;
   width: 235px;
-  padding-left: 45px;
+  padding-left: 34px;
   padding-bottom: 3px;
   background-repeat: no-repeat;
   background-size: 25px;
-  background-position: 10px 2px;
+  background-position: 0 0;
 
   &--map {
     background-image: url("/__spritemap#sprite-map-view");

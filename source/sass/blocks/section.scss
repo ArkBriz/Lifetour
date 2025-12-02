@@ -1,5 +1,6 @@
 .section {
-  padding-block: 20px;
+  padding-top: 30px;
+  padding-bottom: 14px;
 
   &.about {
     @include media("tablet") {
@@ -19,13 +20,26 @@
     }
   }
 
+  &.advantages {
+    padding-top: 10px;
+  }
+
   &.gallery {
+    padding-top: 28px;
     padding-bottom: 3px;
+  }
+
+  &.contacts {
+    padding-bottom: 18px;
   }
 
   @include media("tablet") {
     padding-top: 52px;
     padding-bottom: 35px;
+
+    &.advantages {
+      padding-top: 0;
+    }
 
     &.gallery {
       padding-top: 59px;
@@ -48,7 +62,7 @@
 
 .section__header {
   .tours & {
-    margin-bottom: 42px;
+    margin-bottom: 39px;
     padding-top: 8px;
 
     @include media("tablet") {
@@ -63,7 +77,7 @@
   }
 
   .training & {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 
     @include media("tablet") {
       display: flex;
@@ -116,7 +130,7 @@
   font-weight: 800;
 
   .training > .container > & {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     @include media("tablet") {
       margin-bottom: 36px;
@@ -128,7 +142,7 @@
   }
 
   .advantages &  {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .gallery & {

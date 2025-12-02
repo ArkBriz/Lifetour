@@ -36,7 +36,13 @@
 }
 
 .page-footer__logo {
-  padding-left: 12px;
+  display: block;
+  padding-bottom: 10px;
+
+  @include media("tablet") {
+    padding-left: 12px;
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__nav .nav__list {
@@ -66,7 +72,8 @@
   justify-content: center;
   gap: 16px;
   margin: 0;
-  margin-block: 23px;
+  margin-top: 16px;
+  margin-bottom: 19px;
   padding: 0;
   list-style-type: none;
 
