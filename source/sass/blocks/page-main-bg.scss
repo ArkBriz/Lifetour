@@ -1,11 +1,11 @@
 .page-main {
-  background-image: url("../../img/bg/clouds-1@1x.jpg");
-  background-image: image-set(
-    url("../../img/bg/clouds-1@1x.webp") 1x,
-    url("../../img/bg/clouds-1@2x.webp") 2x,
-    url("../../img/bg/clouds-1@1x.jpg") 1x,
-    url("../../img/bg/clouds-1@2x.jpg") 2x
-  );
+  background-image:
+    image-set(
+      url("../../img/bg/clouds-1@1x.webp") 1x,
+      url("../../img/bg/clouds-1@2x.webp") 2x,
+      url("../../img/bg/clouds-1@1x.jpg") 1x,
+      url("../../img/bg/clouds-1@2x.jpg") 2x
+    );
   background-repeat: no-repeat;
   background-size: 320px 802px;
   background-position: top 567px right -187px;
@@ -24,13 +24,13 @@
   background-repeat: no-repeat;
 
   @include media("tablet") {
-  background-image: url("../../img/bg/clouds-2@1x.jpg");
-  background-image: image-set(
-    url("../../img/bg/clouds-2@1x.webp") 1x,
-    url("../../img/bg/clouds-2@2x.webp") 2x,
-    url("../../img/bg/clouds-2@1x.jpg") 1x,
-    url("../../img/bg/clouds-2@2x.jpg") 2x
-  );
+    background-image:
+      image-set(
+        url("../../img/bg/clouds-2@1x.webp") 1x,
+        url("../../img/bg/clouds-2@2x.webp") 2x,
+        url("../../img/bg/clouds-2@1x.jpg") 1x,
+        url("../../img/bg/clouds-2@2x.jpg") 2x
+      );
     background-size: 750px;
     background-position: right -270px bottom 110px;
   }
@@ -43,25 +43,25 @@
 .page-main__container {
   @include media("tablet") {
     background-repeat: no-repeat;
-  background-image: url("../../img/bg/clouds-4@1x.jpg");
-  background-image: image-set(
-    url("../../img/bg/clouds-4@1x.webp") 1x,
-    url("../../img/bg/clouds-4@2x.webp") 2x,
-    url("../../img/bg/clouds-4@1x.jpg") 1x,
-    url("../../img/bg/clouds-4@2x.jpg") 2x
-  );
+    background-image:
+      image-set(
+        url("../../img/bg/clouds-4@1x.webp") 1x,
+        url("../../img/bg/clouds-4@2x.webp") 2x,
+        url("../../img/bg/clouds-4@1x.jpg") 1x,
+        url("../../img/bg/clouds-4@2x.jpg") 2x
+      );
     background-size: 768px;
     background-position: 0 565px;
   }
 
   @include media("desktop") {
-  background-image: url("../../img/bg/clouds-3@1x.jpg");
-  background-image: image-set(
-    url("../../img/bg/clouds-3@1x.webp") 1x,
-    url("../../img/bg/clouds-3@2x.webp") 2x,
-    url("../../img/bg/clouds-3@1x.jpg") 1x,
-    url("../../img/bg/clouds-3@2x.jpg") 2x
-  );
+    background-image:
+      image-set(
+        url("../../img/bg/clouds-3@1x.webp") 1x,
+        url("../../img/bg/clouds-3@2x.webp") 2x,
+        url("../../img/bg/clouds-3@1x.jpg") 1x,
+        url("../../img/bg/clouds-3@2x.jpg") 2x
+      );
     background-size: 1460px;
     background-position: -30px 270px;
   }

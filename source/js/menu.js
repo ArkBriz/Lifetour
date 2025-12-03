@@ -7,7 +7,7 @@ toggler.addEventListener('click', () => {
   menu.classList.toggle('page-header__nav--closed');
   toggler.classList.toggle('page-header__toggler--open');
 
-  let isOpen = toggler.classList.contains('page-header__toggler--open');
+  const isOpen = toggler.classList.contains('page-header__toggler--open');
   toggler.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
   body.classList.toggle('page-body--lock', isOpen);
@@ -30,4 +30,4 @@ desktopBreakpoint.addEventListener('change', (evt) => {
   if (evt.matches) {
     closeMenu();
   }
-})
+});

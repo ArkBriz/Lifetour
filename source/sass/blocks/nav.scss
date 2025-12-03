@@ -91,6 +91,7 @@
     color: $dark-blue;
     outline: none;
   }
+
   &:active::before {
     transform: scale(0);
   }
@@ -98,14 +99,14 @@
   .page-footer__nav &:active {
     color: $blue;
   }
+}
 
-  &.disabled,
-  &.disabled:hover {
-    color: $grey;
-    cursor: not-allowed;
-  }
+.nav__link.disabled,
+.nav__link.disabled:hover {
+  color: $grey;
+  cursor: not-allowed;
+}
 
-  &.disabled:hover::before {
-    transform: scaleX(0);
-  }
+.nav__link.disabled:hover::before {
+  transform: scaleX(0);
 }

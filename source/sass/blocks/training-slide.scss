@@ -71,16 +71,16 @@
       background-color: $white;
     }
   }
+}
 
-  &.disabled,
-  &.disabled:hover {
-    background-color: $white;
-    border-color: rgba($black, 0.3);
-    cursor: not-allowed;
+.training-slide .disabled,
+.training-slide .disabled:hover {
+  background-color: $white;
+  border-color: rgba($black, 0.3);
+  cursor: not-allowed;
 
-    &::before {
-      background-color: rgba($black, 0.3);
-    }
+  &::before {
+    background-color: rgba($black, 0.3);
   }
 }
 

@@ -2,70 +2,73 @@
   padding-top: 30px;
   padding-bottom: 14px;
 
-  &.about {
-    @include media("tablet") {
-      padding-top: 59px;
-      padding-bottom: 37px;
-    }
-
-    @include media("desktop") {
-      padding-top: 118px;
-      padding-bottom: 54px;
-    }
-  }
-
-  &.advantages {
-    padding-top: 25px;
-  }
-
-  &.gallery {
-    padding-top: 28px;
-    padding-bottom: 3px;
-  }
-
-  &.contacts {
-    padding-bottom: 19px;
-  }
-
   @include media("tablet") {
     padding-top: 52px;
     padding-bottom: 35px;
-
-    &.reviews {
-      padding-top: 48px;
-    }
-
-    &.advantages {
-      padding-top: 0;
-    }
-
-    &.gallery {
-      padding-top: 49px;
-    }
-
-    &.contacts {
-      padding-top: 53px;
-      padding-bottom: 39px;
-    }
   }
 
   @include media("desktop") {
     padding-top: 112px;
     padding-bottom: 100px;
+  }
+}
 
-    &.reviews {
-      padding-top: 115px;
-      padding-bottom: 89px;
-    }
+.section.about {
+  @include media("tablet") {
+    padding-top: 59px;
+    padding-bottom: 37px;
+  }
 
-    &.gallery {
-      padding-top: 109px;
-    }
+  @include media("desktop") {
+    padding-top: 118px;
+    padding-bottom: 54px;
+  }
+}
 
-    &.contacts {
-      padding-top: 116px;
-      padding-bottom: 94px;
-    }
+.section.advantages {
+  padding-top: 25px;
+
+  @include media("tablet") {
+    padding-top: 0;
+  }
+}
+
+.section.gallery {
+  padding-top: 28px;
+  padding-bottom: 3px;
+
+  @include media("tablet") {
+    padding-top: 49px;
+  }
+
+  @include media("desktop") {
+    padding-top: 109px;
+    padding-bottom: 3px;
+  }
+}
+
+.section.reviews {
+  @include media("tablet") {
+    padding-top: 48px;
+  }
+
+  @include media("desktop") {
+    padding-top: 115px;
+    padding-bottom: 89px;
+  }
+}
+
+.section.contacts {
+  padding-bottom: 19px;
+
+  @include media("tablet") {
+    padding-top: 53px;
+    padding-bottom: 39px;
+  }
+
+  @include media("desktop") {
+    padding-top: 116px;
+    padding-bottom: 94px;
   }
 }
 
@@ -153,7 +156,7 @@
     }
   }
 
-  .advantages &  {
+  .advantages & {
     margin-bottom: 36px;
   }
 
@@ -168,7 +171,7 @@
   @include media("tablet") {
     font-size: 25px;
 
-    .advantages &  {
+    .advantages & {
       margin-bottom: 60px;
     }
 
@@ -189,8 +192,12 @@
       line-height: 1;
     }
 
-    .advantages &  {
+    .advantages & {
       margin-bottom: 50px;
+
+      &::before {
+        top: -30px;
+      }
     }
 
     .gallery & {
@@ -203,7 +210,12 @@
   }
 }
 
-h2.section__title,
+.tours .section__title,
+.training .section__title,
+.reviews .section__title,
+.advantages .section__title,
+.gallery .section__title,
+.contacts .section__title,
 .about__container h2 {
   position: relative;
   z-index: 1;
@@ -240,16 +252,15 @@ h2.section__title,
   }
 }
 
-.advantages .section__title {
+.tours .section__title,
+.training .section__title,
+.reviews .section__title,
+.advantages .section__title,
+.gallery .section__title,
+.contacts .section__title {
   &::before {
-    @include media("desktop") {
-      top: -30px;
-    }
+    content: attr(data-title);
   }
-}
-
-h2.section__title::before {
-  content: attr(data-title);
 }
 
 .about__container h2::before {
@@ -282,7 +293,7 @@ h2.section__title::before {
     }
   }
 
-  & .swiper-navigation-icon {
+  .swiper-navigation-icon {
     display: none;
   }
 }

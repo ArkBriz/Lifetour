@@ -62,4 +62,3 @@ callbackForm.addEventListener('submit', (evt) => {
     callbackForm.reportValidity();
   }
 });
-

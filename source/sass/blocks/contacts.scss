@@ -2,7 +2,7 @@
   position: relative;
   text-align: left;
 
-  & .container {
+  .container {
     @include media("tablet") {
       padding-right: 43px;
     }
@@ -60,7 +60,7 @@
     flex-wrap: wrap;
     gap: 40px;
 
-    & br {
+    br {
       display: none;
     }
   }
@@ -80,9 +80,11 @@
   &--phone {
     background-image: url("/__spritemap#sprite-phone-view");
   }
+
   &--mail {
     background-image: url("/__spritemap#sprite-mail-view");
   }
+
   &--address {
     background-image: url("/__spritemap#sprite-pin-stroke-view");
   }
@@ -136,10 +138,10 @@
   }
 }
 
-.contacts__map {
-  img {
-    width: 100%;
-  }
+.contacts__map img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 
   @include media("desktop") {
     position: absolute;
@@ -147,9 +149,4 @@
     left: 50%;
     width: 600px;
   }
-}
-
-.contacts__map img {
-  display: block;
-  margin: 0 auto;
 }

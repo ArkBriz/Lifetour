@@ -71,14 +71,14 @@
       border-color: $dark-blue;
     }
   }
+}
 
-  &.disabled,
-  &.disabled:hover {
+.tours__show-all.disabled,
+.tours__show-all.disabled:hover {
   color: $grey;
   cursor: not-allowed;
 
-    &::before {
-      border-color: $grey;
-    }
+  &::before {
+    border-color: $grey;
   }
 }

@@ -128,11 +128,13 @@
     mask-size: 16px;
     mask-position: 6px center;
   }
+
   &--ok::before {
     mask-image: url("/__spritemap#sprite-ok-view");
     mask-size: 9px;
     mask-position: 10px center;
   }
+
   &--reddit::before {
     mask-image: url("/__spritemap#sprite-reddit-view");
     mask-size: 14px;
@@ -156,16 +158,16 @@
       background-color: $white;
     }
   }
+}
 
-  &.disabled,
-  &.disabled:hover {
-    background-color: $white;
-    border-color: rgba($black, 0.3);
-    cursor: not-allowed;
+.page-footer__socials-link.disabled,
+.page-footer__socials-link.disabled:hover {
+  background-color: $white;
+  border-color: rgba($black, 0.3);
+  cursor: not-allowed;
 
-    &::before {
-      background-color: rgba($black, 0.3);
-    }
+  &::before {
+    background-color: rgba($black, 0.3);
   }
 }
 

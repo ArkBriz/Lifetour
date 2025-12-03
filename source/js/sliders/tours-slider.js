@@ -1,5 +1,5 @@
-import Swiper from "swiper";
-import {Navigation} from "swiper/modules";
+import Swiper from 'swiper';
+import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 
 new Swiper('.tours .swiper', {

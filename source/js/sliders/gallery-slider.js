@@ -1,9 +1,8 @@
-import Swiper from "swiper";
-import {Navigation} from "swiper/modules";
+import Swiper from 'swiper';
+import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 
 const breakpoint = window.matchMedia('(max-width: 1439px)');
-const wrapper = document.querySelector('.gallery__slider .swiper-wrapper');
 
 let slider = null;
 

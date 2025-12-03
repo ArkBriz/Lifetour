@@ -95,7 +95,7 @@
 
   @include media("tablet") {
     height: 224px;
-    transform: translate(0,-22px);
+    transform: translate(0, -22px);
   }
 
   @include media("desktop") {
@@ -128,7 +128,7 @@
     width: 592px;
     font-size: 16px;
 
-    & br {
+    br {
       display: none;
     }
   }
