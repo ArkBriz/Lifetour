@@ -9,26 +9,28 @@
     url("../../img/bg/callback-bg@1x.jpg") 1x,
     url("../../img/bg/callback-bg@2x.jpg") 2x
   );
-  background-size: 1400px;
-  background-position: -614px -52px;
+  background-size: 1394px 746px;
+  background-position: -609px -56px;
 
   @include media("tablet") {
-    background-size: 1520px;
-    background-position: -455px center;
+    background-size: 1469px 795px;
+    background-position: -427px -59px;
   }
 
   @include media("desktop") {
-    background-size: cover;
-    background-position: center;
+    background-size: 1440px;
+    background-position: 0 0;
   }
 }
 
 .callback__container {
   padding: 174px 31px;
-  padding-bottom: 177px;
+  padding-top: 177px;
+  padding-bottom: 174px;
 
   @include media("tablet") {
-    padding: 185px 204px;
+    padding: 187px 204px;
+    padding-bottom: 185px;
   }
 
   @include media("desktop") {
@@ -38,32 +40,33 @@
 
 .callback h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: 22px;
   line-height: 1;
   font-weight: 800;
 
   @include media("tablet") {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     font-size: 25px;
   }
 
   @include media("desktop") {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 35px;
   }
 }
 
 .callback p {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   @include media("tablet") {
     width: 360px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 24px;
+    transform: translateX(-1px);
 
     & br {
       display: none;
@@ -72,7 +75,16 @@
 
   @include media("desktop") {
     width: 600px;
-    margin-bottom: 36px;
+    margin-bottom: 39px;
+    transform: none;
+  }
+}
+
+.callback__text {
+  margin-left: 3px;
+
+  @include media("tablet") {
+    margin-left: 0;
   }
 }
 
@@ -102,6 +114,12 @@
 }
 
 .callback .button {
+  padding-top: 22px;
+
+  @include media("tablet") {
+    padding-top: 20px;
+  }
+
   @include media("desktop") {
     width: 180px;
   }

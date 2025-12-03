@@ -1,5 +1,7 @@
 .field {
   padding: 14px 15px;
+  padding-top: 15px;
+  padding-left: 14px;
   font-size: 16px;
   line-height: 1;
   border: 1px solid rgba($blue, 0.1);
@@ -7,6 +9,7 @@
 
   @include media("tablet") {
     padding: 17px 30px;
+    padding-bottom: 18px;
   }
 
   &::placeholder {

@@ -4,24 +4,18 @@
 
   &.about {
     @include media("tablet") {
-      padding-top: 64px;
+      padding-top: 59px;
       padding-bottom: 37px;
     }
 
     @include media("desktop") {
-      padding-top: 75px;
+      padding-top: 118px;
       padding-bottom: 54px;
     }
   }
 
-  &.reviews {
-    @include media("desktop") {
-      padding-bottom: 89px;
-    }
-  }
-
   &.advantages {
-    padding-top: 10px;
+    padding-top: 25px;
   }
 
   &.gallery {
@@ -30,22 +24,27 @@
   }
 
   &.contacts {
-    padding-bottom: 18px;
+    padding-bottom: 19px;
   }
 
   @include media("tablet") {
     padding-top: 52px;
     padding-bottom: 35px;
 
+    &.reviews {
+      padding-top: 48px;
+    }
+
     &.advantages {
       padding-top: 0;
     }
 
     &.gallery {
-      padding-top: 59px;
+      padding-top: 49px;
     }
 
     &.contacts {
+      padding-top: 53px;
       padding-bottom: 39px;
     }
   }
@@ -54,12 +53,18 @@
     padding-top: 112px;
     padding-bottom: 100px;
 
+    &.reviews {
+      padding-top: 115px;
+      padding-bottom: 89px;
+    }
+
     &.gallery {
-      padding-top: 112px;
+      padding-top: 109px;
     }
 
     &.contacts {
-      padding-bottom: 95px;
+      padding-top: 116px;
+      padding-bottom: 94px;
     }
   }
 }
@@ -67,16 +72,17 @@
 .section__header {
   .tours & {
     margin-bottom: 39px;
-    padding-top: 8px;
+    padding-top: 9px;
 
     @include media("tablet") {
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
+      padding-top: 8px;
     }
 
     @include media("desktop") {
-      margin-bottom: 53px;
+      margin-bottom: 47px;
     }
   }
 
@@ -90,18 +96,19 @@
     }
 
     @include media("desktop") {
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
   }
 
   .reviews & {
     margin-bottom: 32px;
-    padding-top: 12px;
+    padding-top: 7px;
 
     @include media("tablet") {
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
+      padding-top: 12px;
     }
 
     @include media("desktop") {
@@ -112,13 +119,14 @@
 
   .gallery & {
     margin-bottom: 31px;
-    padding-top: 11px;
+    padding-top: 9px;
 
     @include media("tablet") {
       display: grid;
       grid-template-columns: 1fr 78px;
       align-items: end;
       margin-bottom: 21px;
+      padding-top: 11px;
     }
 
     @include media("desktop") {
@@ -141,20 +149,20 @@
     }
 
     @include media("desktop") {
-      margin-bottom: 32px;
+      margin-bottom: 29px;
     }
   }
 
   .advantages &  {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   .gallery & {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
   }
 
   .contacts & {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 
   @include media("tablet") {
@@ -165,27 +173,32 @@
     }
 
     .gallery & {
-      margin-bottom: 29px;
+      margin-bottom: 30px;
     }
 
     .contacts & {
-      margin-bottom: 20px;
+      margin-bottom: 21px;
     }
   }
 
   @include media("desktop") {
     font-size: 35px;
+    line-height: 41px;
+
+    .reviews & {
+      line-height: 1;
+    }
 
     .advantages &  {
       margin-bottom: 50px;
     }
 
     .gallery & {
-      margin-bottom: 24px;
+      margin-bottom: 21px;
     }
 
     .contacts & {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -259,7 +272,7 @@ h2.section__title::before {
     @include media("desktop") {
       display: flex;
       justify-content: center;
-      margin-top: 48px;
+      margin-top: 47px;
     }
   }
 

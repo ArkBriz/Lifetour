@@ -5,12 +5,12 @@
     padding-top: 12px;
 
     @include media("tablet") {
-      padding-top: 65px;
+      padding-top: 60px;
     }
 
     @include media("desktop") {
       padding: 0;
-      padding-top: 135px;
+      padding-top: 132px;
     }
   }
 }
@@ -18,14 +18,18 @@
 .advantages__slider.is-disabled .swiper-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 
   @include media("tablet") {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 30px;
-    row-gap: 28px;
+    row-gap: 29px;
     justify-content: center;
+  }
+
+  @include media("desktop") {
+    row-gap: 28px;
   }
 }
 
@@ -54,42 +58,63 @@
   }
 }
 
-.advantages__slide.swiper-slide {
-  width: 290px;
-  padding: 81px 9px 20px;
+.advantages__slide {
+  &.swiper-slide {
+    width: 290px;
+    padding: 81px 9px 20px;
 
-  @include media("tablet") {
-    width: 324px;
-    padding: 103px 19px 30px;
-    background-size: 48px;
-    background-position: center 30px;
-  }
+    @include media("tablet") {
+      width: 324px;
+      min-height: 341px;
+      padding: 103px 19px 30px;
+      background-size: 48px;
+      background-position: center 29px;
+    }
 
-  @include media("desktop") {
-    width: 380px;
-    min-height: 329px;
-    padding: 124px 19px 40px;
-    background-size: 54px;
-    background-position: center 39px;
+    @include media("desktop") {
+      width: 380px;
+      min-height: 329px;
+      padding: 120px 19px 40px;
+      background-size: 54px;
+      background-position: center 39px;
+    }
   }
 }
 
-.advantages__slide h3 {
-  margin: 0;
-  margin-bottom: 15px;
-  font-size: 14px;
-  line-height: 1;
-  font-weight: 600;
+.advantages__slide {
+  h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
 
-  @include media("tablet") {
-    font-size: 16px;
+    @include media("tablet") {
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+
+    @include media("desktop") {
+      font-size: 18px;
+      margin-bottom: 15px;
+
+      br {
+        display: none;
+      }
+    }
   }
+}
 
-  @include media("desktop") {
-    font-size: 18px;
+.advantages__heading {
+  &--leaf {
+    padding-right: 4px;
 
-    br {
-      display: none;
+    @include media("tablet") {
+      padding-right: 4px;
+    }
+
+    @include media("desktop") {
+      padding-right: 0;
     }
   }
 }
@@ -127,20 +152,24 @@
       display: none;
     }
 
+    .nbsp:nth-of-type(2) {
+      display: inline;
+    }
+
     @include media("tablet") {
       br:first-of-type {
         display: none;
       }
 
       br:last-of-type {
-        display: block;
-      }
-
-      .nbsp:nth-child(2) {
         display: inline;
       }
 
-      .nbsp:nth-child(3) {
+      .nbsp:nth-of-type(1) {
+        display: inline;
+      }
+
+      .nbsp:nth-of-type(2) {
         display: none;
       }
     }
@@ -156,6 +185,24 @@
 
       .nbsp:first-of-type {
         display: none;
+      }
+    }
+  }
+
+  & span {
+    @include media("tablet") {
+      margin-left: 0;
+
+      & span {
+        margin-left: -1px;
+
+        @include media("desktop") {
+          margin-left: 0;
+        }
+      }
+
+      @include media("desktop") {
+        margin-left: 0;
       }
     }
   }

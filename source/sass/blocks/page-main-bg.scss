@@ -7,12 +7,12 @@
     url("../../img/bg/clouds-1@2x.jpg") 2x
   );
   background-repeat: no-repeat;
-  background-size: 346px;
-  background-position: top 463px right -205px;
+  background-size: 320px 802px;
+  background-position: top 567px right -187px;
 
   @include media("tablet") {
     background-size: 600px;
-    background-position: top 944px right -176px;
+    background-position: top 946px right -176px;
   }
 
   @include media("desktop") {

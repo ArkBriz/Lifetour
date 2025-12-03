@@ -1,8 +1,9 @@
 .reviews .reviews-slide {
   display: grid;
-  gap: 20px;
+  gap: 19px;
   width: 290px;
   padding: 20px;
+  padding-top: 19px;
   background-color: $white;
   box-shadow: 0 0 30px 0 rgba($blue, 0.1);
 
@@ -10,12 +11,13 @@
     grid-template-columns: 186px 1fr;
     width: 565px;
     gap: 30px;
+    padding: 20px;
   }
 
   @include media("desktop") {
     grid-template-columns: 258px 1fr;
     width: 700px;
-    padding: 19px 30px;
+    padding: 20px 30px;
   }
 }
 
@@ -49,9 +51,10 @@
 
 .reviews-slide p {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   @include media("tablet") {
+    margin-bottom: 9px;
     font-size: 12px;
     line-height: 18px;
 
@@ -63,6 +66,10 @@
   @include media("desktop") {
     font-size: 14px;
     line-height: 22px;
+
+    &:first-of-type {
+      line-height: 21.7px;
+    }
 
     &:last-of-type {
       margin-bottom: 4px;

@@ -8,7 +8,7 @@
   );
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 -6px;
+  background-position: 0 -10px;
 
   @include media("tablet") {
     background-image: url("../../img/bg/about-bg-tablet@1x.jpg");
@@ -31,14 +31,14 @@
       url("../../img/bg/about-bg-desktop@1x.jpg") 1x,
       url("../../img/bg/about-bg-desktop@2x.jpg") 2x
     );
-    background-size: 670px;
-    background-position: -4px -22px;
+    background-size: 660px;
+    background-position: 0 -18px;
   }
 }
 
 .about__container {
   width: 290px;
-  padding-top: 410px;
+  padding-top: 407px;
 
   @include media("tablet") {
     width: 270px;
@@ -59,6 +59,7 @@
   margin-bottom: 42px;
   font-size: 22px;
   line-height: 1;
+  font-weight: 800;
 
   @include media("tablet") {
     margin-bottom: 48px;
@@ -66,7 +67,7 @@
   }
 
   @include media("desktop") {
-    margin-bottom: 61px;
+    margin-bottom: 59px;
     font-size: 35px;
   }
 }
@@ -79,7 +80,7 @@
 
 .about__list h3 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 1;
 
@@ -89,7 +90,7 @@
   }
 
   @include media("desktop") {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-size: 21px;
   }
 }
@@ -119,9 +120,9 @@
 }
 
 .about__item:not(:last-child) p {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @include media("tablet") {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }

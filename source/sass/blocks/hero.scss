@@ -10,7 +10,7 @@
 
 .hero__slide {
   min-height: 568px;
-  padding-top: 143px;
+  padding-top: 145px;
   padding-bottom: 90px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,6 +127,10 @@
   @include media("tablet") {
     margin-bottom: 35px;
   }
+
+  @include media("tablet") {
+    margin-bottom: 37px;
+  }
 }
 
 .hero__text-content h3 {
@@ -141,7 +145,7 @@
   }
 
   @include media("desktop") {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     font-size: 77px;
   }
 }

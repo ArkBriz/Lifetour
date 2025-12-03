@@ -54,11 +54,14 @@
 
   @include media("tablet") {
     width: 330px;
+    padding-top: 31px;
+    padding-bottom: 30px;
   }
 
   @include media("desktop") {
     width: 380px;
     padding-top: 196px;
+    padding-bottom: 30px;
   }
 }
 
@@ -74,7 +77,7 @@
   position: relative;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
-  margin-block: 15px 31px;
+  margin-block: 16px 30px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -87,6 +90,14 @@
     height: 1px;
     bottom: -15px;
     background-color: rgba($white, 0.3);
+  }
+
+  @include media("tablet") {
+    margin-block: 16px 30px;
+  }
+
+  @include media("desktop") {
+    margin-block: 16px 30px;
   }
 }
 
@@ -139,17 +150,19 @@
   gap: 8px;
   justify-content: space-between;
   margin: 0;
-  letter-spacing: 0.4px;
 }
 
 .tours-slide__term {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   font-weight: 300;
+  letter-spacing: 0.3px;
 }
 
 .tours-slide__desc {
   margin: 0;
   font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.5px;
 }
 
 .tours-slide__stars {
